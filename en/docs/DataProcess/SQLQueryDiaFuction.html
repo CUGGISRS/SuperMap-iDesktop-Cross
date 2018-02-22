@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>The Operators and Functions in SQL | SuperMap iDesktop Cross 9D</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/SQLQueryDiaFuction.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="zh" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html">
+    
+      <link rel="alternative" hreflang="en" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html/en">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/SuperMap-iDesktop-Cross/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <!-- RSS -->
+  <link rel="alternate" href="/SuperMap-iDesktop-Cross/atom.xml" title="SuperMap iDesktop Cross 9D">
+  <!-- Open Graph -->
+   <!--<meta name="description" content="OperatorsThe operators are used to onstruct SQL expression. Including commonly mathematical operators, logical operators and some special operators. Mathematical operators    Operators Description Exa">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Operators and Functions in SQL">
+<meta property="og:url" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/SQLQueryDiaFuction.html">
+<meta property="og:site_name" content="SuperMap iDesktop Cross 9D">
+<meta property="og:description" content="OperatorsThe operators are used to onstruct SQL expression. Including commonly mathematical operators, logical operators and some special operators. Mathematical operators    Operators Description Exa">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-01-16T07:29:43.952Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Operators and Functions in SQL">
+<meta name="twitter:description" content="OperatorsThe operators are used to onstruct SQL expression. Including commonly mathematical operators, logical operators and some special operators. Mathematical operators    Operators Description Exa">
+<meta property="fb:admins" content="100000247608790">-->
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/SuperMap-iDesktop-Cross//en" id="logo">SuperMap iDesktop Cross</a>
+    </h1>
+    <h2 id="Productname">SuperMap iDesktop Cross</h2>
+    <nav id="main-nav">
+      <!--<a class="main-nav-link" href="/SuperMap-iDesktop-Cross/">Home</a>-->
+      <a href="/SuperMap-iDesktop-Cross/en/" class="main-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="main-nav-link">Help</a>
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="main-nav-link"><i class="fa fa-git"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="docs/DataProcess/SQLQueryDiaFuction.html">
+        
+          <option value="zh">简体中文</option>
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">The Operators and Functions in SQL</h1>
+                <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross-Docs/blob/master/source/en/docs/DataProcess/SQLQueryDiaFuction.md" class="article-edit-link" title="Get Page Source File"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h3 id="Operators" class="article-heading"><a href="#Operators" class="headerlink" title="Operators"></a>Operators<a class="article-anchor" href="#Operators" aria-hidden="true"></a></h3><p>The operators are used to onstruct SQL expression. Including commonly mathematical operators, logical operators and some special operators.</p>
+<p><strong>Mathematical operators</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Operators</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> ＋</td>
+<td style="text-align:left">Addition</td>
+<td style="text-align:left">RENT + UTILITIES &lt;= 800</td>
+</tr>
+<tr>
+<td style="text-align:left"> -</td>
+<td style="text-align:left">Subtraction</td>
+<td style="text-align:left">POP_2002 - POP_1994</td>
+</tr>
+<tr>
+<td style="text-align:left"> *</td>
+<td style="text-align:left">Multiplication</td>
+<td style="text-align:left">DENSITY * AREA &gt; 5000000</td>
+</tr>
+<tr>
+<td style="text-align:left"> /</td>
+<td style="text-align:left">Division</td>
+<td style="text-align:left">VALUE / POP = 50000</td>
+</tr>
+<tr>
+<td style="text-align:left"> \</td>
+<td style="text-align:left">Quotient</td>
+<td style="text-align:left">VALUE \　POP &gt; 100</td>
+</tr>
+<tr>
+<td style="text-align:left"> %</td>
+<td style="text-align:left">Modulus</td>
+<td style="text-align:left">VALUE1 % VALUE2</td>
+</tr>
+<tr>
+<td style="text-align:left"> Mod</td>
+<td style="text-align:left">Modulus</td>
+<td style="text-align:left">VALUE1 Mod VALUE2</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Comparison</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Operators</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> =</td>
+<td style="text-align:left">Equal to</td>
+<td style="text-align:left">CODE = 100</td>
+</tr>
+<tr>
+<td style="text-align:left"> &gt;</td>
+<td style="text-align:left">Greater than</td>
+<td style="text-align:left">POP_2002 &gt; 5000000</td>
+</tr>
+<tr>
+<td style="text-align:left"> &lt;</td>
+<td style="text-align:left">Less than</td>
+<td style="text-align:left">INDUST_GROWTH &lt; 0</td>
+</tr>
+<tr>
+<td style="text-align:left"> &gt;=</td>
+<td style="text-align:left">Greater than or equal</td>
+<td style="text-align:left">RENT + UTILITIES &gt;= 800</td>
+</tr>
+<tr>
+<td style="text-align:left"> &lt;=</td>
+<td style="text-align:left">Less than or equal</td>
+<td style="text-align:left">RENT + UTILITIES &lt;= 800</td>
+</tr>
+<tr>
+<td style="text-align:left"> &lt;&gt;</td>
+<td style="text-align:left">Not equal to</td>
+<td style="text-align:left">VALUE &lt;&gt; 100</td>
+</tr>
+<tr>
+<td style="text-align:left"> !</td>
+<td style="text-align:left">Logical NOT,!&lt;(not less than)、!&gt;(not greater than)</td>
+<td style="text-align:left">VALUE !&gt; 100</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Logical</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Operators</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> AND</td>
+<td style="text-align:left">Combines two Boolean expressions and returns TRUE if both expressions are TRUE.</td>
+<td style="text-align:left">CODE = 100 AND VALUE &gt; 20000</td>
+</tr>
+<tr>
+<td style="text-align:left"> NOT</td>
+<td style="text-align:left">Negates a Boolean value.</td>
+<td style="text-align:left">NOT IsBACHELOR</td>
+</tr>
+<tr>
+<td style="text-align:left"> OR</td>
+<td style="text-align:left">Combines two Boolean expressions and returns TRUE if at least one expression is TRUE.</td>
+<td style="text-align:left">SALES &gt; 20000 OR ORDERS &gt; 20000</td>
+</tr>
+<tr>
+<td style="text-align:left"> IN</td>
+<td style="text-align:left">Determines if the operand matches a certain value in the expression list.</td>
+<td style="text-align:left">PROVINCE In (“GUANGDONG”)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Between</td>
+<td style="text-align:left">Determines whether an expression is within a certain range. It is often used together with AND.</td>
+<td style="text-align:left">SALES Between 4095 AND 20000</td>
+</tr>
+<tr>
+<td style="text-align:left"> Like</td>
+<td style="text-align:left">Determines whether the given string matches wholly a specified pattern.</td>
+<td style="text-align:left">COUNTRY Like “CANADA”</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Others</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Operators</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> Is NULL</td>
+<td style="text-align:left">Determines whether or not a given expression is NULL</td>
+<td style="text-align:left">CONTINENT Is NULL</td>
+</tr>
+<tr>
+<td style="text-align:left"> Is TRUE</td>
+<td style="text-align:left">Determines whether or not a given expression is TRUE.</td>
+<td style="text-align:left">Value &lt; 0 Is TRUE</td>
+</tr>
+<tr>
+<td style="text-align:left"> Is FALSE</td>
+<td style="text-align:left">Determines whether or not a given expression is FALSE.</td>
+<td style="text-align:left">Value &gt; 0 Is FALSE</td>
+</tr>
+<tr>
+<td style="text-align:left"> #</td>
+<td style="text-align:left">Matches a single character of any value.</td>
+<td style="text-align:left">World.SmID like ‘1#3’</td>
+</tr>
+<tr>
+<td style="text-align:left"> ´</td>
+<td style="text-align:left">Used for the input of char or date fields.</td>
+<td style="text-align:left">World.COUNTRY like ‘*Country’</td>
+</tr>
+<tr>
+<td style="text-align:left"> ˆ</td>
+<td style="text-align:left">Logical Exclusive XOR</td>
+<td style="text-align:left">World.SmID \^ World.COLOR_MAP &gt;0</td>
+</tr>
+<tr>
+<td style="text-align:left"> ·</td>
+<td style="text-align:left">Used for specifying a field of a dataset</td>
+<td style="text-align:left">World.COUNTRY</td>
+</tr>
+<tr>
+<td style="text-align:left"> *</td>
+<td style="text-align:left">Matches multiple characters. You can insert the asterisk (*) at any position in a string.</td>
+<td style="text-align:left">World.COUNTRY like ‘*Country’</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Aggregate-Functions" class="article-heading"><a href="#Aggregate-Functions" class="headerlink" title="Aggregate Functions"></a>Aggregate Functions<a class="article-anchor" href="#Aggregate-Functions" aria-hidden="true"></a></h3><p>Aggregate functions perform a calculation on a set of values and return a single value. Except for the function COUNT, aggregate functions ignore null values. Aggregate functions are often used with the GROUP BY clause of the SELECT statement. All aggregate functions are deterministic; they return the same value any time they are called with a given set of input values. Except for Count, aggregate functions can not be applied to data in text type. The expressions of aggregate functions can be the names of fields of datasets in SuperMap.    </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Functions</th>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> Avg</td>
+<td style="text-align:left">Average</td>
+<td style="text-align:left">Returns the average of the values in a group. Null values are ignored.</td>
+<td style="text-align:left">Avg(World.POP_1994)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Count</td>
+<td style="text-align:left">Count</td>
+<td style="text-align:left">Returns the total number of items in a group.</td>
+<td style="text-align:left">Count(*)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Max</td>
+<td style="text-align:left">MaxValue</td>
+<td style="text-align:left">Returns the maximum value in a set of values.</td>
+<td style="text-align:left">Max(World.POP_1994)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Min</td>
+<td style="text-align:left">MinValue</td>
+<td style="text-align:left">Returns the minimum in a set of values.</td>
+<td style="text-align:left">Min(World.POP_1994)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Sum</td>
+<td style="text-align:left">Sum</td>
+<td style="text-align:left">Returns the sum of a set of values.</td>
+<td style="text-align:left">Sum(World.POP_1994)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Stdev</td>
+<td style="text-align:left">Standard Deviation</td>
+<td style="text-align:left">Returns the statistical standard deviation of all values in the given expression. For Oracle datasources, the function is STDDEV.</td>
+<td style="text-align:left">Stdev(World.POP_1994)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Var</td>
+<td style="text-align:left">Variance</td>
+<td style="text-align:left">Returns the statistical variance of all values in the given expression. For Oracle datasources, the function is VARIANCE.</td>
+<td style="text-align:left">Var(World.POP_1994)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Mathematical-Functions" class="article-heading"><a href="#Mathematical-Functions" class="headerlink" title="Mathematical Functions"></a>Mathematical Functions<a class="article-anchor" href="#Mathematical-Functions" aria-hidden="true"></a></h3><p>Mathematical functions perform operations on mathematical expression and return the results. The expressions of mathematical functions are often composed of fields of datasets or the expressions composed by these types of fields, such as Cos(Slope), Ceiling(Pop/Area), etc.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Functions</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> Abs</td>
+<td style="text-align:left">Returns the absolute value of the expression. Applicable to fields (or expressions) in Short, Long, Single, or Double type.</td>
+<td style="text-align:left">Abs(World.SmID)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Acos</td>
+<td style="text-align:left">Returns the arccosine of the expression as an angle in radians ranging from -p to p. Applicable to fields or expressions in Single or Double type. The value of the expression ranges from -1 to 1.</td>
+<td style="text-align:left">Acos(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Asin</td>
+<td style="text-align:left">Returns the arcsine of the expression as an angle in radians ranging from -p to p. Applicable to fields or expressions in Single or Double type. The value of the expression ranges from -1 to 1.</td>
+<td style="text-align:left">Asin(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Atan</td>
+<td style="text-align:left">Returns the arctangent of the expression as an angle in radians. For SDB datasources, the function is Atn.</td>
+<td style="text-align:left">Atan(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Ceiling</td>
+<td style="text-align:left">Returns the smallest integer greater than or equal to the expression. Applicable to fields (or expressions) in Short, Long, Single, or Double type. For Oracle datasources, the function is CEIL.</td>
+<td style="text-align:left">Ceiling(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Cos</td>
+<td style="text-align:left">Returns the cosine of the expression as an angle in radians.</td>
+<td style="text-align:left">Cos(World.COLOR_MAP)</td>
+</tr>
+<tr>
+<td style="text-align:left"> cot</td>
+<td style="text-align:left">Returns the cotangent of the expression as an angle in radians.</td>
+<td style="text-align:left">Cot(angle)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Degrees</td>
+<td style="text-align:left">Converts from radians to degrees.</td>
+<td style="text-align:left">Degrees(angle)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Exp</td>
+<td style="text-align:left">Returns a Double value containing e (the base of natural logarithms) raised to the specified power.</td>
+<td style="text-align:left">Exp(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Floor</td>
+<td style="text-align:left">Returns the largest number that is less than or equal to the specified number.</td>
+<td style="text-align:left">Floor(23.45)，Floor(-123.45)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Log</td>
+<td style="text-align:left">Returns the natural logarithm of the specified expression. Not applicable to UDB datasources. For Oracle datasources, the function is Log(n, m), representing the logarithm of m with base n.</td>
+<td style="text-align:left">Log(World.SmID)，Log(n,m)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Power</td>
+<td style="text-align:left">Returns the value of parameter 1 to the power of parameter 2. Not applicable to SDB datasources.</td>
+<td style="text-align:left">Power(expression,2) as Area</td>
+</tr>
+<tr>
+<td style="text-align:left"> Radians</td>
+<td style="text-align:left">Converts degrees to radians.</td>
+<td style="text-align:left">Radians(angle) as NewAngle</td>
+</tr>
+<tr>
+<td style="text-align:left"> Rand</td>
+<td style="text-align:left">Returns a float value less than 1, but greater than or equal to zero.</td>
+<td style="text-align:left">Rand()</td>
+</tr>
+<tr>
+<td style="text-align:left"> Round</td>
+<td style="text-align:left">Returns a number rounded to a specified number of decimal places. Parameter 1 and 2 respectively specify the number to round and the decimal places. The number nearest the specified value will be returned if you didn’t specify the decimal places.</td>
+<td style="text-align:left">Round(World.SmArea,2)，Round(World.SmArea)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Sign</td>
+<td style="text-align:left">Returns -1, 0, or +1 when the expression value is negative, zero, or positive respectively.</td>
+<td style="text-align:left">Sign(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Sin</td>
+<td style="text-align:left">Returns the sine of the expression value as an angle in radians.</td>
+<td style="text-align:left">Sin(World.COLOR_MAP)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Square</td>
+<td style="text-align:left">Returns the square of the expression value.</td>
+<td style="text-align:left">Square(Production)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Sqrt</td>
+<td style="text-align:left">Returns the square root of the expression value.</td>
+<td style="text-align:left">Sqrt(Production)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Tan</td>
+<td style="text-align:left">Returns the tangent of the expression value.</td>
+<td style="text-align:left">Tan(World.COLOR_MAP)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="String-Functions" class="article-heading"><a href="#String-Functions" class="headerlink" title="String Functions"></a>String Functions<a class="article-anchor" href="#String-Functions" aria-hidden="true"></a></h3><p>String functions are used to perform many types of manipulation on string data.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Functions</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> Ascii</td>
+<td style="text-align:left">Returns the ASCII code value of the leftmost character of a character expression. Syntax: ASCII( character_expression) character_expression is an expression of the type text.</td>
+<td style="text-align:left">Ascii(String)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Char</td>
+<td style="text-align:left">Converts an int ASCII to a character. For SDB datasources, the function is Chr. Syntax: Char( integer_expression) integer_expression is an integer expression with value ranging from 0 to 255. NULL will be returned if the integer expression is not in this range.</td>
+<td style="text-align:left">Char(data)</td>
+</tr>
+<tr>
+<td style="text-align:left"> InStr</td>
+<td style="text-align:left">Returns the location of a substring in a string. Syntax: InSt([start_location],expr1,expr2) expr1 is the string to search. expr2 is the substring to search for in expr1. start_location is the position in string1 where the search will start. This argument is optional. If omitted, it defaults to 1.</td>
+<td style="text-align:left">InStr(1,World.CAPITAL,”Jing”)，InStr(World.CAPITAL,”Jing”)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Length</td>
+<td style="text-align:left">Returns the length of the specified string. If the specified string1 is NULL, then the function returns NULL. Syntax: Length(string_expression) string_expression is the string to return the length for. For SDB and SQL datasources, the function is Len(string_expression).</td>
+<td style="text-align:left">Lenth(World.CAPITAL)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Lower</td>
+<td style="text-align:left">LowerConverts all letters in the specified string to lowercase. Syntax: Lower(character_expression) character_expression is the string to convert to lowercase.</td>
+<td style="text-align:left">Lower(World.CAPITAL) as capital</td>
+</tr>
+<tr>
+<td style="text-align:left"> Ltrim</td>
+<td style="text-align:left">Returns a string containing a copy of a specified string with no leading spaces. Syntax: Ltrim(character_expression) character_exprssion is the string to trim.</td>
+<td style="text-align:left">Ltrim(World.CAPITAL)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Replace</td>
+<td style="text-align:left">Replaces a sequence of characters in a string with another set of characters. Syntax: Replace(‘string_expr1’,’string_expr2’,’string_expr3’) string_expr1 is the string to replace a sequence of characters with another set of characters. string_expr2 is the string that will be searched for in string_expr1. string_expr3 is the string to replace string_expr2.</td>
+<td style="text-align:left">Replace(World.CAPITAL,”liu”,”lia”)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Reverse</td>
+<td style="text-align:left">Returns string converted in the reverse order. Syntax: Reverse( character_expression) character_expression is the string to reverse.</td>
+<td style="text-align:left">Reverse(World.CAPITAL) as NewName</td>
+</tr>
+<tr>
+<td style="text-align:left"> Rtrim</td>
+<td style="text-align:left">Returns a string containing a copy of a specified string with no trailing spaces. Syntax: Rtrim(character_expression) character_expression is any valid string expression.</td>
+<td style="text-align:left">Rtrim(World.CAPITAL)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Soundex</td>
+<td style="text-align:left">Returns a phonetic representation (the way it sounds) of a string. Syntax: Soundex(character_expression) character_expression the string whose phonetic value will be returned.</td>
+<td style="text-align:left">Soundex(word)</td>
+</tr>
+<tr>
+<td style="text-align:left"> Space</td>
+<td style="text-align:left">Returns a string consisting of the specified number of spaces. If it is negative, NULL will be returned.</td>
+<td style="text-align:left">World.COUNTRY+Space(3)+World.CAPITAL as World_CAPITAL</td>
+</tr>
+<tr>
+<td style="text-align:left"> Substr</td>
+<td style="text-align:left">Returns a part of text expression. Syntax: Substr(expression, start, length). expression do not contain the aggregate function; start is an integer, pointing the start position of substring; length is an integer, pointing the length of substring.</td>
+<td style="text-align:left">Substr ( string, position, 1 )</td>
+</tr>
+<tr>
+<td style="text-align:left"> Unicode</td>
+<td style="text-align:left">Returns an integer containing the Unicode code point of the first character in the string, or NULL if the first character is not a valid encoding. Syntax: Unicode(‘ncharacter_expression’) ncharacter_expression is the string whose first character is to be converted to an integer.</td>
+<td style="text-align:left">Unicode(World.CAPITAL) as Unicode</td>
+</tr>
+<tr>
+<td style="text-align:left"> Upper</td>
+<td style="text-align:left">Converts all letters in the specified string to uppercase. For SDB datasources, the function is LCase. Syntax: Upper(character_expression) character_expression is any valid string expression.</td>
+<td style="text-align:left">Upper(World.CAPITAL)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Date-Functions" class="article-heading"><a href="#Date-Functions" class="headerlink" title="Date Functions"></a>Date Functions<a class="article-anchor" href="#Date-Functions" aria-hidden="true"></a></h3><p>Date functions are used to get information on date and time. These scalar functions perform an operation on a date and time input value and return a string, numeric, or date and time value. The date functions can be used anywhere in the expression</p>
+<p><strong>Tab. Date Functions</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Date Functions</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> DateAdd</td>
+<td style="text-align:left">Returns a new date value based on adding an interval to the specified date. Syntax: DateAdd( datepart, number, date) datepart is the parameter that specifies on which part of the date to return a new value. number is the value used to increment datepart. date is an expression that returns a date or smalldatetime value, or a character string in date type.</td>
+<td style="text-align:left">DateAdd(“yyyy”,2,World.GETDATE) as EndDate</td>
+</tr>
+<tr>
+<td style="text-align:left"> DateDiff</td>
+<td style="text-align:left">Returns the number of date and time boundaries crossed between two specified dates. Syntax: DateDiff( datepart,startdate,enddate) datepart is the parameter that specifies on which part of the date to calculate the difference. startdate is the beginning date. enddate is the ending date. The result would be negative if the enddate is earlier than the startdate.</td>
+<td style="text-align:left">DateDiff ( “yyyy”, Start, End ) as DiffMonth，Datediff(‘yyyy’,’2010-02-25’,World.GETDATE)</td>
+</tr>
+<tr>
+<td style="text-align:left"> DatePart</td>
+<td style="text-align:left">Returns an integer representing the specified datepart of the specified date. Syntax: DatePart( datepart ,date)) datepart is the parameter that specifies the part of the date to return. date is a filed or expression of date type.</td>
+<td style="text-align:left">Datepart(‘d’,World.GETDATE) as day</td>
+</tr>
+<tr>
+<td style="text-align:left"> Day</td>
+<td style="text-align:left">Returns an integer representing the day datepart of the specified date. Syntax: DatePart( datepart ,date)) date is an expression of type date.</td>
+<td style="text-align:left">Day(World.GETDATE) as Day</td>
+</tr>
+<tr>
+<td style="text-align:left"> GetDate</td>
+<td style="text-align:left">Gets current date and time in standard SQL Syntax.</td>
+<td style="text-align:left">GetDate()</td>
+</tr>
+<tr>
+<td style="text-align:left"> GetUtcDate</td>
+<td style="text-align:left">Returns the date value representing the current UTC time (Universal Time Coordinate or Greenwich Mean Time). The current UTC time is derived from the current local time and the time zone setting in the operating system of the computer on which SQL Server is running.</td>
+<td style="text-align:left">GetUtcDate()</td>
+</tr>
+<tr>
+<td style="text-align:left"> Month</td>
+<td style="text-align:left">Returns an integer that represents the month part of a specified date. It equals to DatePart( “m” , date). Applicable to date fields. Syntax: Month( date) date is a field or expression of date type.</td>
+<td style="text-align:left">Month(World.GETDATE) as Month</td>
+</tr>
+<tr>
+<td style="text-align:left"> Year</td>
+<td style="text-align:left">Returns an integer that represents the year part of a specified date. It equals to DatePartdate. Applicable to date fields. Syntax: Year(date) date is a date field.</td>
+<td style="text-align:left">Year(World.GETDATE) as Year</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tab: datepart values</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Value</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"> yyyy</td>
+<td style="text-align:left">Year</td>
+</tr>
+<tr>
+<td style="text-align:left"> q</td>
+<td style="text-align:left">Quarter</td>
+</tr>
+<tr>
+<td style="text-align:left"> m</td>
+<td style="text-align:left">Month</td>
+</tr>
+<tr>
+<td style="text-align:left"> y</td>
+<td style="text-align:left">Day of a year</td>
+</tr>
+<tr>
+<td style="text-align:left"> d</td>
+<td style="text-align:left">Day</td>
+</tr>
+<tr>
+<td style="text-align:left"> w</td>
+<td style="text-align:left">Weekday</td>
+</tr>
+<tr>
+<td style="text-align:left"> ww</td>
+<td style="text-align:left">Week</td>
+</tr>
+<tr>
+<td style="text-align:left"> h</td>
+<td style="text-align:left">Hour</td>
+</tr>
+<tr>
+<td style="text-align:left"> n</td>
+<td style="text-align:left">Minute</td>
+</tr>
+<tr>
+<td style="text-align:left"> s</td>
+<td style="text-align:left">Second</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-01-16T07:29:43.952Z" itemprop="dateModified">Last updated: 2018-01-16</time>
+                <a href="/SuperMap-iDesktop-Cross/en/docs/index.html" class="article-footer-next" title="sidebar.docs.undefined"><span>Next Page</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Operators"><span class="toc-text">Operators</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Aggregate-Functions"><span class="toc-text">Aggregate Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mathematical-Functions"><span class="toc-text">Mathematical Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-Functions"><span class="toc-text">String Functions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date-Functions"><span class="toc-text">Date Functions</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><ul class="topnav"><li id="welcome"><strong class="sidebar-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="sidebar-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="sidebar-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="sidebar-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="sidebar-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="sidebar-title">Data processing</strong><ul><li id="Projection"><strong class="sidebar-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="sidebar-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="sidebar-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="sidebar-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="sidebar-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="sidebar-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="sidebar-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="sidebar-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="sidebar-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="sidebar-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="sidebar-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="sidebar-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="sidebar-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="sidebar-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="sidebar-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="sidebar-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="sidebar-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="sidebar-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="sidebar-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="sidebar-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="sidebar-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="sidebar-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="sidebar-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="sidebar-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="sidebar-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="sidebar-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="sidebar-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="sidebar-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="sidebar-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="sidebar-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="sidebar-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="sidebar-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="sidebar-link">Raster query</a></li></ul></li><li id="Map"><strong class="sidebar-title">Mapping</strong><ul><li id="Thematic"><strong class="sidebar-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="sidebar-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="sidebar-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="sidebar-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="sidebar-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="sidebar-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="sidebar-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="sidebar-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="sidebar-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="sidebar-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="sidebar-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="sidebar-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="sidebar-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="sidebar-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="sidebar-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="sidebar-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="sidebar-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="sidebar-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="sidebar-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="sidebar-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="sidebar-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="sidebar-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="sidebar-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="sidebar-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="sidebar-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="sidebar-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="sidebar-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="sidebar-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="sidebar-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="sidebar-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="sidebar-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="sidebar-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="sidebar-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="sidebar-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="sidebar-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="sidebar-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="sidebar-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="sidebar-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="sidebar-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="sidebar-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="sidebar-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="sidebar-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="sidebar-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="sidebar-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="sidebar-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="sidebar-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="sidebar-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="sidebar-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="sidebar-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="sidebar-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="sidebar-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="sidebar-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="sidebar-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="sidebar-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="sidebar-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="sidebar-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="sidebar-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="sidebar-link">FAQ</a></li></ul></li><li id="News"><strong class="sidebar-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="sidebar-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="sidebar-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="sidebar-link">Cross 8C(2017) New Feature</a></li></ul></li></ul></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2018 <a href="http://www.supermap.com/" target="_blank">iDesktop</a><br>
+      Documentation Version 1.0.0
+    </div>
+    <div id="footer-links">
+      <!--a href="https://twitter.com/" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a-->
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="footer-link" target="_blank"><i class="fa fa-git"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/SuperMap-iDesktop-Cross/en/" class="mobile-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="mobile-nav-link">Help</a>
+      <li class="mobile-nav-item">
+        <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="mobile-nav-link" rel="external" target="_blank">git.OSChina</a>
+      </li>
+    </ul>
+    
+      <ul class="topnav"><li id="welcome"><strong class="mobile-nav-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="mobile-nav-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="mobile-nav-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="mobile-nav-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="mobile-nav-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="mobile-nav-title">Data processing</strong><ul><li id="Projection"><strong class="mobile-nav-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="mobile-nav-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="mobile-nav-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="mobile-nav-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="mobile-nav-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="mobile-nav-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="mobile-nav-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="mobile-nav-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="mobile-nav-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="mobile-nav-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="mobile-nav-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="mobile-nav-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="mobile-nav-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="mobile-nav-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="mobile-nav-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="mobile-nav-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="mobile-nav-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="mobile-nav-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="mobile-nav-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="mobile-nav-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="mobile-nav-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="mobile-nav-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="mobile-nav-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="mobile-nav-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="mobile-nav-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="mobile-nav-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="mobile-nav-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="mobile-nav-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="mobile-nav-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="mobile-nav-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="mobile-nav-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="mobile-nav-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="mobile-nav-link">Raster query</a></li></ul></li><li id="Map"><strong class="mobile-nav-title">Mapping</strong><ul><li id="Thematic"><strong class="mobile-nav-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="mobile-nav-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="mobile-nav-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="mobile-nav-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="mobile-nav-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="mobile-nav-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="mobile-nav-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="mobile-nav-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="mobile-nav-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="mobile-nav-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="mobile-nav-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="mobile-nav-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="mobile-nav-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="mobile-nav-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="mobile-nav-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="mobile-nav-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="mobile-nav-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="mobile-nav-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="mobile-nav-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="mobile-nav-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="mobile-nav-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="mobile-nav-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="mobile-nav-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="mobile-nav-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="mobile-nav-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="mobile-nav-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="mobile-nav-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="mobile-nav-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="mobile-nav-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="mobile-nav-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="mobile-nav-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="mobile-nav-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="mobile-nav-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="mobile-nav-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="mobile-nav-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="mobile-nav-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="mobile-nav-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="mobile-nav-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="mobile-nav-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="mobile-nav-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="mobile-nav-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="mobile-nav-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="mobile-nav-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="mobile-nav-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="mobile-nav-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="mobile-nav-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="mobile-nav-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="mobile-nav-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="mobile-nav-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="mobile-nav-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="mobile-nav-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="mobile-nav-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="mobile-nav-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="mobile-nav-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="mobile-nav-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="mobile-nav-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="mobile-nav-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="mobile-nav-link">FAQ</a></li></ul></li><li id="News"><strong class="mobile-nav-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="mobile-nav-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="mobile-nav-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="mobile-nav-link">Cross 8C(2017) New Feature</a></li></ul></li></ul>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/DataProcess/SQLQueryDiaFuction.html">
+      
+        <option value="zh">简体中文</option>
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/SuperMap-iDesktop-Cross/js/lang_select.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/toc.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/mobile_nav.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.10.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/slider.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.5.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/sidebar.js"></script>
+<!-- endbuild -->
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.css" /-->
+<link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/docsearch.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+var host=window.location.host;
+if(host=='supermap-idesktop.github.io')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else if(host=='')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else(host=='support.supermap.com.cn')
+{
+  docsearch({
+    apiKey: '19f860b1fcffb4b23a7b2f928e8b0692',
+    indexName: 'supermap-cn',
+    inputSelector: '#search-input'
+  });
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Introductions of The Thematic Map Types | SuperMap iDesktop Cross 9D</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/ThematicMap.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="zh" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html">
+    
+      <link rel="alternative" hreflang="en" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html/en">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/SuperMap-iDesktop-Cross/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <!-- RSS -->
+  <link rel="alternate" href="/SuperMap-iDesktop-Cross/atom.xml" title="SuperMap iDesktop Cross 9D">
+  <!-- Open Graph -->
+   <!--<meta name="description" content="Both the vector data and the raster data can be used to create the thematic maps, but the difference is the thematic map of vector data is based on the attribute information in its attribute table,">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Introductions of The Thematic Map Types">
+<meta property="og:url" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/ThematicMap.html">
+<meta property="og:site_name" content="SuperMap iDesktop Cross 9D">
+<meta property="og:description" content="Both the vector data and the raster data can be used to create the thematic maps, but the difference is the thematic map of vector data is based on the attribute information in its attribute table,">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/UniqueValuesMap.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/RangesMap.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/LabelMap.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/TextAlignment1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/TextAlignment2.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/TextAlignment3.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/LabelFlow1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/LabelFlow2.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/LeaderLine.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/AlongLineDirection1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/AlongLineDirection2.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/RepeatedLabel.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/GraphMap.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/GraphType.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/ProjectSetting.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/GraphTextFormat.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/DotDensityMap.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/GraduatedSymbolMap.png">
+<meta property="og:updated_time" content="2018-02-05T20:38:03.030Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Introductions of The Thematic Map Types">
+<meta name="twitter:description" content="Both the vector data and the raster data can be used to create the thematic maps, but the difference is the thematic map of vector data is based on the attribute information in its attribute table,">
+<meta name="twitter:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/Map/img/UniqueValuesMap.png">
+<meta property="fb:admins" content="100000247608790">-->
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/SuperMap-iDesktop-Cross//en" id="logo">SuperMap iDesktop Cross</a>
+    </h1>
+    <h2 id="Productname">SuperMap iDesktop Cross</h2>
+    <nav id="main-nav">
+      <!--<a class="main-nav-link" href="/SuperMap-iDesktop-Cross/">Home</a>-->
+      <a href="/SuperMap-iDesktop-Cross/en/" class="main-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="main-nav-link">Help</a>
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="main-nav-link"><i class="fa fa-git"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="docs/Map/ThematicMap.html">
+        
+          <option value="zh">简体中文</option>
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Introductions of The Thematic Map Types</h1>
+                <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross-Docs/blob/master/source/en/docs/Map/ThematicMap.md" class="article-edit-link" title="Get Page Source File"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>　　Both the vector data and the raster data can be used to create the thematic maps, but the difference is the thematic map of vector data is based on the attribute information in its attribute table, but the thematic map of raster data is based on the pixel value. The thematic map is applicable to the point, line, region, raster and complex datasets except the text and image datasets.</p>
+<p>　　The datasets applying to vector data include: Unique Values Map, Ranges Map, Label Map, Graph Map, Graduated Symbols Map, Dot Density Map, Custom Map. The Grid Unique Values Map and Grid Ranges Map are applied to raster data. The features of thematic maps are as follows:</p>
+<ul>
+<li><p>A thematic map as an independent layer is shown on a map, you can adjust its order as your needs.</p>
+</li>
+<li><p>You can produce multiple thematic maps in different types or the same type with a dataset.</p>
+</li>
+</ul>
+<h3 id="Unique-Values-Map" class="article-heading"><a href="#Unique-Values-Map" class="headerlink" title="Unique Values Map"></a>Unique Values Map<a class="article-anchor" href="#Unique-Values-Map" aria-hidden="true"></a></h3><p>　　Classify the features with the same thematic value as a class, set a rendering style for every class to differentiate categories, such as colors or symbols. The thematic variable could be either a non-numeric attribute such as the name, type and state of a feature, or a numeric attribute which is used to identification, such as ID, the type identification number of land use and so on. Certainly, it also could be the numeric attribute which is used to represent quantity, at the time, the features with the same value are assigned a style, if there are a lot of different values, the method is not recommended.</p>
+<p>　　The production of a unique thematic map aims to present the qualitative differences of phenomenon mainly. It can be used for a geological map, a geomorphologic map, a vegetation map, a land use map, a political map. For instance, to present the distribution area and range of different types of land (grassland, woodland and residential areas),  the same type of land will be given the same color or filled style.<br>  <img src="img/UniqueValuesMap.png" alt=""></p>
+<h3 id="Ranges-Map" class="article-heading"><a href="#Ranges-Map" class="headerlink" title="Ranges Map"></a>Ranges Map<a class="article-anchor" href="#Ranges-Map" aria-hidden="true"></a></h3><p><strong>1.Overview</strong></p>
+<p>　　Divide the thematic value into several ranges according to a method, the objects whose attribute values are within a range are presented by the same color, the same filled symbol or the same marker. The thematic variable for a range map must be numeric. The range maps is best used for reflecting the characteristic in quantity and degree for continuous distribution phenomenon, such as precipitation distribution or soil erosion intensity.</p>
+<p>　　How are the intensity levels of soil erosion presented intuitively on a map when you produce a soil erosion intensity map? The best answer is classifying the intensity of soil erosion, such as classify it into 6 ranges (range from: &lt;500; 500-2000; 2000-6000; 6000-10000; 10000-20000; &gt;20000),  and then give a different color for every range, for example, you can set the objects whose values are less than 200 are light red, and the features whose values are within 500-2000 are red, and so on.</p>
+<p>　　Following sketch is about precipitation distribution.</p>
+<p>  <img src="img/RangesMap.png" alt=""></p>
+<p><strong>2.Style Settings</strong></p>
+<p>　　The best advantage of a range map is the reflection of different degrees between ranges by colors, such as by the changing of colors from green to red presents the changing of precipitation. SuperMap has provided some style settings (colors, line types, filled, etc) for you to render the style of every range.</p>
+<p><strong>3.Method</strong></p>
+<p>　　6 ways are provided by SuperMap to classify the thematic value, including: Equal Interval, Square Root Interval, Standard Deviation Interval, Logarithmic Interval, Quantile Interval, Custom Interval. Adopting different methods, the results are different. When the number of ranges is different, the produced thematic maps are also different.</p>
+<p>　　The standard determining whether the thematic variable has been classified very well is all the objects with the similar values belong to the same category. The method and the number of ranges are the two important factors to decide the presentation of a range map. </p>
+<h3 id="Label-Map" class="article-heading"><a href="#Label-Map" class="headerlink" title="Label Map"></a>Label Map<a class="article-anchor" href="#Label-Map" aria-hidden="true"></a></h3><p><strong>1.Overview</strong></p>
+<p>　　Labels are indispensable on a map which not only helps you better distinguish objects, but also presents some important attributes, such as the name of river, tourist sites, institutions and the altitude of contour line, etc. With SuperMap, you can add labels on a map easily.</p>
+<p>　　It mostly is used for labeling point, line or region objects, the thematic variable should be chart or numeric field (road names, address names, river levels, river width, etc.). But the drawing elements such as the legend, map name, scale and others will not be labeled.</p>
+<p>　　In a label map, you can set the display style and position of labels together, or set the display style for every label or labels within a range separately.</p>
+<p>　　The advantages of the label maps are: the settings of range styles are supported in a label map, you can set a range field expression to divide all objects into several classes, and then set different styles for the labels of objects within different classes; when zooming labels in or out on a label map, the text can be displayed only between the maximum and minimum.</p>
+<p>  <img src="img/LabelMap.png" alt=""></p>
+<p><strong>2.The control of label position</strong></p>
+<p>　　The position of a label is very important considering these problems, how to place labels can make a map more beautiful, how to avoid overlap phenomenon, how to better identify the relationship between labels and objects.</p>
+<ul>
+<li><strong>Inner point</strong></li>
+</ul>
+<p>　　Under the default and uniform setting situation, the anchor point of a label in a label map is the inner point.  Before you know about the position of anchor point, you should know the position of inner point.</p>
+<p>　　For different geometric objects, the inner points are different. The inner point of a point object is itself, the inner point of a region point is located in the inside of the region object and close to the center. The inner point of a line object is the inner point of its first sub object, if the number of the nodes of sub object is odd, the middle point is the inner point, but if it is even, the inner point is the center point of the two points in the middle of all nodes.</p>
+<ul>
+<li><strong>Anchor point and label position</strong></li>
+</ul>
+<p>　　Generally, by the anchor point of a label controls the position of label. The settings of relation between a label and its anchor point are performed in text style. 12 position relations (alignment types) are provided to control the placing situation of a label around its anchor point. They are: Left Top, Center Left, Bottom Left, Top Center, Center, Middle Bottom, Top Right, Center Right, Right Bottom, Left Baseline, Right Baseline, Center Baseline.</p>
+<p>   <img src="img/TextAlignment1.png" alt="">   <img src="img/TextAlignment2.png" alt="">   <img src="img/TextAlignment3.png" alt=""></p>
+<ul>
+<li><strong>Offset</strong></li>
+</ul>
+<p>　　The anchor point of label can have a certain offset which can be set by setting the offset of label in x and y axes. The offset value can be a constant value or a value expressed by an expression (such as the expression is SmID, the SmID equals 2, then the offset value is 2), the unit of offset is the map unit. You can fix the offset value (means that the value doesn’t change when zooming in/out on a map).</p>
+<ul>
+<li><strong>Effects and special processes</strong></li>
+</ul>
+<p>　　In the settings of label position, SuperMap has provided various settings for you to meet your needs of labels, at this point the anchor point may have no connection with the inner point, including: Flow, No Overlap, Show Leader Line, Alongline Labeling, etc, among them, the Flow function only applies to label line or region elements, and the Alongline Labeling is only worked for line elements.</p>
+<ul>
+<li><p><strong>Flow</strong>: It is used for displaying the labels of geometric objects, in case part of them are displayed on the current window while their labels can be viewed only by panning the map (if the labels’ position is fixed), when the function is opened, the labels will be moved with the panning of the map. Following pictures shows the comparison before and after opening “Flow”. <strong>Note</strong>: The function can not be available for the thematic maps which were created based on point layers.</p>
+<p><img src="img/LabelFlow1.png" alt="">   <img src="img/LabelFlow2.png" alt=""></p>
+</li>
+<li><p><strong>No Overlap</strong>: Under the situation that the objects are too close to each other and the space of every object is too small, the anchor point of label is controlled by the object’s inner point with the labels overlap each other which could lead to some labels (at bottom) are hidden. When the function is opened, some overlapped labels will be shown against the position relative to the objects’ inner points by default. Certainly, some overlapped phenomenon still can’t be avoided when overlapping is severe.</p>
+</li>
+<li><p><strong>Show Leader Line</strong>: Since a leader line is connected with a object’s inner point, by a leader line, the object corresponding with a flowing label can be found out. Following picture shows a thematic map with the function has been opened.</p>
+<p><img src="img/LeaderLine.png" alt=""></p>
+</li>
+<li><p><strong>Alongline Labeling</strong>: Some linear features are too long, so when producing a map, it can make the map more beautiful that the labels are placed along them, and the same label can be shown at regular intervals. </p>
+</li>
+</ul>
+<p>　　5 items are provided for the function: Along the normal of the line; Top to bottom, right to left; Top to bottom, left to right; Bottom to top, left to right; Bottom to top, right to left. If you select the first direction, the labels will be labeled from the starting point to ending point along the line direction. For another 4 items, every item contains of two parts (vertical direction and horizontal direction), according to the line direction determines which part are effective. The direction of a straight line is horizontal if the angle between the line and horizontal direction is less than 60 degree, otherwise, it is vertical. But for an arc, the angle between the tangent at the anchor point and horizontal direction is considered. For the line whose direction is horizontal, the labels will be placed as right to left or right to left, whereas for the line whose direction is vertical, the labels will be placed as top to bottom or bottom to top.</p>
+<p>　　<strong>Note</strong>: All labels will be shown as the rotation of font set up in the style settings if the text angle is fixed without considering the labeling direction, but if the text angle is not fixed, both the rotation of font and labeling direction are considered when displaying the labels.</p>
+<p>   <img src="img/AlongLineDirection1.png" alt="">   <img src="img/AlongLineDirection2.png" alt=""></p>
+<ul>
+<li><strong>Remove Repeat</strong>: If it has a line object which consists of several segments, when producing a thematic map base on a thematic map, there are multiple repeated labels shown on the map. To resolve this problem, you can check the “Remove Repeat” checkbox, the result is shown as follow.</li>
+<li><p><img src="img/RepeatedLabel.png" alt=""></p>
+</li>
+</ul>
+<p><strong>3.Label Style</strong></p>
+<ul>
+<li><p><strong>Text Style</strong></p>
+<p>　　The style settings of labels include: Font, Alignment, Font Size, Font Height, Rotation, Text Color, Background, etc., in addition, some font effects have been provided, such as: Bold, Italic, Shadow, Outline, Strikeout, Transparency and so on. Among them, when Transparency is not checked, the background is the text background, but both Transparency and Outline are checked, the background is the color of outline. For details, please consult the introductions of label position. Please note that the font size is relative to the font height.</p>
+<p>　　Provide the settings of display precision for number, for example, if the precision is 0.1, the object whose field value is 178.3129 is displayed as 178.3 on the label thematic map. The settings of max height and min height of text are provided, which are used to control the font size when zooming in or out on a map, the function is effective with the premise that the font size is not fixed.</p>
+</li>
+</ul>
+<ul>
+<li><p><strong>Background Style</strong></p>
+<p>　　7 types of background shapes of labels: Default, Rectangle, Round Rectangle, Ellipse, Diamond, Triangle, and  Marker Symbol. Among them, the function Marker Symbol allows you to choose a marker symbol from Marker Symbol Selector as the background of labels. The style settings of label background is the same with a region symbol’s.</p>
+</li>
+</ul>
+<p><strong>4.Range Display of Label Thematic Maps</strong></p>
+<p>　　 You can set a range field expression, and compare the values of the field with range values to determine which range an object belongs to, and then set the different styles for objects in different ranges.</p>
+<h3 id="Graph-Map" class="article-heading"><a href="#Graph-Map" class="headerlink" title="Graph Map"></a>Graph Map<a class="article-anchor" href="#Graph-Map" aria-hidden="true"></a></h3><p><strong>1.Overview</strong></p>
+<p>　　Used for reflecting the values of fields of objects or records. A graph map can reflect various attributes based on multiple variables, i.e. lots of field values can be drawn on a graph map. The vertical and horizontal comparisons between region itself and each region can be shown by a graph map. A graph map is mostly used for the map with quantitative characteristic, such as GDP, population and so on.</p>
+<p>　　Such as, you can take Pop1, Pop2, Pop3, Pop4 (representing the amount of tourists for four quarters) as thematic variables to produce a graph map which is about the tourist amount in the tourist sites of Beijing for every quarter.</p>
+<p>  <img src="img/GraphMap.png" alt=""></p>
+<p><strong>2.Deeply Know about a Graph Map</strong></p>
+<ul>
+<li><p><strong>a Graph Map with a Graph</strong></p>
+<p>　　They two different concepts. On a graph map, there is a graph representing the thematic value of it in every area. Graphs have various types, currently are supported including: Area, Step, Line, Point, Bar, 3D Bar, Pie, 3D Pie, Rose, Stacked Bar, 3D Stacked Bar and Ring.</p>
+<p><img src="img/GraphType.png" alt=""></p>
+</li>
+</ul>
+<ul>
+<li><strong>Graduated By</strong></li>
+</ul>
+<p>　　The graduated mode is mostly used for graph maps and graduated symbol maps. After the size of a graph map and proportion of every thematic variable are determined, the graduated mode will be used to reduce the differences between values. If there is huge difference between values, the appearance of a thematic map can looks more beautiful by using Square Root or Logarithm. Currently, three methods for graduating data are provided. Please have a notice for that if there are negative values, Square Root and Logarithm are not available.</p>
+<p>　　　Constant: Graduated by the attribute value.</p>
+<p>　　　Square Root: Graduated by the square root of the attribute value. </p>
+<p>　　　Logarithm: Graduated by the logarithm of the attribute value.</p>
+<ul>
+<li><strong>How to determine the size of a graph map</strong></li>
+</ul>
+<p>　　The display size of a graph map depends on the combination of extreme values of display, graduated mode and thematic extreme values. The extreme values of display include the maximum and minimum values displaying the graph map. If using a different graduating mode, the size of a graph also is different.</p>
+<p>　　Thematic extreme values include the thematic maximum and minimum values. The thematic maximum value can be got by adding maximum values of all thematic variables, similarly, add minimum values of all thematic variables to get the thematic minimum value. For example, a field ID whose maximum value is 25 and a field SmID whose maximum value is 10 are thematic variables, the thematic maximum value is 35.</p>
+<p>　　Note: the sum of every thematic value of an object decides the size of the corresponding graph , each thematic value decides the proportion of the object.</p>
+<p>　　<strong>Relative Relation</strong>: According to the given display extreme values and thematic extreme values, a linear coefficient can be calculated by use of linear relationship, and then by the coefficient, a linear equation can be calculated which can computer the sizes of every graph. For example, the fields Val1 and Val2 are the thematic variables, the graduating mode is Constant, the given display extreme values are 20 and 10, the thematic extreme values are 10 and 6, and then the calculated linear equation is Y＝2.5X-5. The values of Val1 and Val2 of an object A are 2 and 6, the sum of thematic values of A is 8, according to the equation, the size of graph should be 15 (different types of graphs, the meanings represented by the value are different). For a bar, 15 represents the height of graph corresponding with A is 15, since the proportion of Val1 and Val2 is 1:3, the bar heights representing Val1 and Val2 are 3.75, 11.25 respectively.</p>
+<p>　　<strong>Note</strong>: The unit of the above numbers is the same with the map unit. </p>
+<ul>
+<li><strong>The settings of display effect of thematic maps</strong></li>
+</ul>
+<p>　　Similar with a label thematic map, a graph map also can be set whether to open Flow, No Overlap, Show Leader Line, and whether there are offset in the graph map and so on. Besides, the styles of coordinate axes of some graphs and the graphs themselves can be set.</p>
+<p>　　(1). <strong>Settings of coordinate axes of a graphs</strong></p>
+<p>   　　You can set whether to display the coordinate axes of a graph, if yes, then the colors of axes and whether to display grids and text labels on the axes can be set. If the text labels are displayed on the axes, you can set styles for them. </p>
+<p>　　　　<img src="img/ProjectSetting.png" alt=""></p>
+<p>　　(2). <strong>Settings of a graph</strong></p>
+<p>   　　You can set whether to fix the graph size, and whether to display the text labels on graphs. If the labels are displayed, you can set the display format and text style of graphs. The display formats include: Percent, Value, Caption, Caption + Percent, Caption + Value.</p>
+<p>   <img src="img/GraphTextFormat.png" alt=""></p>
+<p>　　(3). <strong>No overlap</strong></p>
+<p>   　　For a graph map and a label map, both of them are produced based the same dataset, when the text labels of the graph map are displayed on current window and overlap the labels of the label thematic map, the former will be hidden, so, you can avoid this problem by the function.</p>
+<p>　　(4). <strong>Other settings</strong></p>
+<p>   　　You can set whether to display the data with attribute values are negative. The width of a bar in the Bar, 3D Bar, Stacked Bar or 3D Stacked Bar can be specified, and for a Rose or 3D Rose, you can specify the rose angle. For a Pie, 3D Pie, Rose, 3D Rose, you can specify the starting angle.</p>
+<h3 id="Dot-Density-Map" class="article-heading"><a href="#Dot-Density-Map" class="headerlink" title="Dot Density Map"></a>Dot Density Map<a class="article-anchor" href="#Dot-Density-Map" aria-hidden="true"></a></h3><p>　　A dot density map is mostly used for representing distribution range, quantitative characteristic and distribution density of phenomenons by using dots or other symbols. The amount and represented meaning of dots rely on the map contents. In a dot density map, a numeric attribute information of a layer are mapped to different levels, and by using different amount of dots or symbols represents every level to present the differences between different areas. Dot density maps are usually used quantitative data, such as GDP, population, output of grain in different areas, and so on. A dot density map apply to region datasets.</p>
+<p>  <img src="img/DotDensityMap.png" alt=""></p>
+<p><strong>The meaning of dots in a dot density map</strong>: </p>
+<ul>
+<li>A dot density map reflects the thematic values corresponded with each area or range by using the amount or denseness of dots, each dot represents a certain phenomena, hence, the thematic value of an area can be got by the number of dots within the area times the amount represented by each dot. For example, the population of a city is 2000000, each dot represents 20000, so the number of dots within the region (the city) is 100.</li>
+<li>In a dot density map, for the regions that the number of dots are the same, the region with smaller area has denser dots, that’s why a dot density map shows the density of phenomenon even though its thematic value is numeric.</li>
+<li>You can specify the value represented by each dot and its size in a dot density map. If the value is too small or the size is too large, the dots will overlap each other which leads to the distribution is not obvious. Hence, it is very important setting appropriate value representing by each dot and its size.</li>
+<li>The styles of dots in a dot density map are the same, so you can produce multiple dot density maps with different dot styles based on several attributes to show the distribution characteristics of multiple attributes on a map.</li>
+<li>The dot distributions are random, no practical significance.</li>
+</ul>
+<h3 id="Graduated-Symbols-Map" class="article-heading"><a href="#Graduated-Symbols-Map" class="headerlink" title="Graduated Symbols Map"></a>Graduated Symbols Map<a class="article-anchor" href="#Graduated-Symbols-Map" aria-hidden="true"></a></h3><p>　　By using a group of graduated symbols shown on maps, in a certain way, graduated symbol maps present the relative relation between different features in a quantitative characteristic.  The thematic variable must be numeric when creating a graduated symbols map.</p>
+<p>  <img src="img/GraduatedSymbolMap.png" alt=""></p>
+<p>　　<strong>How to determine the display size of a graduated symbol</strong></p>
+<p>　　The main factors are: the point symbol size in a graduated symbols map, the datum value of a graduated symbols map, the scale of a statistical value. The point size is different from the display size. For a graduated symbols map, the sizes of all symbols are the same, the thematic values of features are different, hence the display sizes of symbols are different.</p>
+<p>　　The graduated modes include: Constant, Square Root, Logarithm. In a graduated symbols map, when adopt different method to graduate attribute value, the values which are used to specify the display size of symbols are different. The datum value is specified by author.</p>
+<p>　　<strong>The settings of display effects</strong>: For a graduated symbols map, the functions “Flow”, “Show Leader Line”, “Offset Setting” are also supported like a label map and a graph map, but the difference is the target object, for a label map. it is a label, for a graph map, it is a graph, but for a graduated symbols map, it is a symbol. Besides, you can set whether to display the objects whose thematic values are negative or 0, and respectively specify the styles of objects when the thematic values are negative, 0, positive.</p>
+<h3 id="Grid-Unique-Values-Map" class="article-heading"><a href="#Grid-Unique-Values-Map" class="headerlink" title="Grid Unique Values Map"></a>Grid Unique Values Map<a class="article-anchor" href="#Grid-Unique-Values-Map" aria-hidden="true"></a></h3><p>　　In a grid unique value map, the pixels with the same attribute values are taken as a class, and then different colors will be set for every class to distinguish different categories. Grid unique value maps apply for discrete  raster data and some continuous raster data. The usages of grid unique values maps are meaningless in the continuous data that the grid values are different form each other.</p>
+<p>　　A grid unique values map is similar with an unique values map, but the differences are:</p>
+<ol>
+<li>For the operation object, in an unique value map, it is vector data, but in a grid unique values map, it is raster data.</li>
+<li>For the thematic values, in an unique values map, they are the features’ field values or field expression values, but in a grid unique value map, they are the attribute values of pixels in a raster dataset.</li>
+<li>For the style settings, in an unique values map, there are: color style settings, filling style settings, symbol style settings, but in a grid unique value map, there is color style settings only.</li>
+</ol>
+<h3 id="Grid-Ranges-Map" class="article-heading"><a href="#Grid-Ranges-Map" class="headerlink" title="Grid Ranges Map"></a>Grid Ranges Map<a class="article-anchor" href="#Grid-Ranges-Map" aria-hidden="true"></a></h3><p>　　In a grid ranges map, all attribute values of pixels are divided into several ranges as a method, the pixels whose attribute values are within the same range are rendered with the same color. It is used to reflect quantity or degree characteristic of continuous distribution phenomena, such as precipitation distribution.</p>
+<p>　　A grid ranges map is similar with a ranges map, but the differences are:</p>
+<ol>
+<li>For the operation object, in a ranges map, it is vector data, but in a grid ranges map, it is raster data.</li>
+<li>For the dividing methods, in a ranges map, all of them are supported, but in a grid ranges map, only four methods are supported, they are: Equal Interval, Square Root Interval, Logarithmic Interval and Custom Interval.</li>
+<li>For the thematic values, in a ranges map, they are the features’ field values or field expression values, but in a grid ranges map, they are the attribute values of pixels in a raster dataset.</li>
+<li>For the style settings, in a ranges map, there are: color style settings, filling style settings, symbol style settings, but in a grid ranges map, there is color style settings only.</li>
+</ol>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-02-05T20:38:03.030Z" itemprop="dateModified">Last updated: 2018-02-05</time>
+                <a href="/SuperMap-iDesktop-Cross/en/docs/index.html" class="article-footer-next" title="sidebar.docs.undefined"><span>Next Page</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Unique-Values-Map"><span class="toc-text">Unique Values Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ranges-Map"><span class="toc-text">Ranges Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Label-Map"><span class="toc-text">Label Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Graph-Map"><span class="toc-text">Graph Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dot-Density-Map"><span class="toc-text">Dot Density Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Graduated-Symbols-Map"><span class="toc-text">Graduated Symbols Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Grid-Unique-Values-Map"><span class="toc-text">Grid Unique Values Map</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Grid-Ranges-Map"><span class="toc-text">Grid Ranges Map</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><ul class="topnav"><li id="welcome"><strong class="sidebar-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="sidebar-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="sidebar-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="sidebar-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="sidebar-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="sidebar-title">Data processing</strong><ul><li id="Projection"><strong class="sidebar-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="sidebar-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="sidebar-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="sidebar-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="sidebar-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="sidebar-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="sidebar-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="sidebar-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="sidebar-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="sidebar-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="sidebar-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="sidebar-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="sidebar-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="sidebar-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="sidebar-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="sidebar-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="sidebar-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="sidebar-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="sidebar-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="sidebar-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="sidebar-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="sidebar-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="sidebar-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="sidebar-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="sidebar-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="sidebar-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="sidebar-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="sidebar-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="sidebar-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="sidebar-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="sidebar-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="sidebar-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="sidebar-link">Raster query</a></li></ul></li><li id="Map"><strong class="sidebar-title">Mapping</strong><ul><li id="Thematic"><strong class="sidebar-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="sidebar-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="sidebar-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="sidebar-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="sidebar-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="sidebar-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="sidebar-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="sidebar-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="sidebar-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="sidebar-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="sidebar-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="sidebar-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="sidebar-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="sidebar-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="sidebar-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="sidebar-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="sidebar-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="sidebar-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="sidebar-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="sidebar-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="sidebar-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="sidebar-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="sidebar-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="sidebar-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="sidebar-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="sidebar-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="sidebar-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="sidebar-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="sidebar-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="sidebar-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="sidebar-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="sidebar-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="sidebar-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="sidebar-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="sidebar-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="sidebar-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="sidebar-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="sidebar-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="sidebar-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="sidebar-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="sidebar-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="sidebar-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="sidebar-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="sidebar-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="sidebar-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="sidebar-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="sidebar-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="sidebar-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="sidebar-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="sidebar-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="sidebar-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="sidebar-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="sidebar-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="sidebar-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="sidebar-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="sidebar-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="sidebar-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="sidebar-link">FAQ</a></li></ul></li><li id="News"><strong class="sidebar-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="sidebar-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="sidebar-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="sidebar-link">Cross 8C(2017) New Feature</a></li></ul></li></ul></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2018 <a href="http://www.supermap.com/" target="_blank">iDesktop</a><br>
+      Documentation Version 1.0.0
+    </div>
+    <div id="footer-links">
+      <!--a href="https://twitter.com/" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a-->
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="footer-link" target="_blank"><i class="fa fa-git"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/SuperMap-iDesktop-Cross/en/" class="mobile-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="mobile-nav-link">Help</a>
+      <li class="mobile-nav-item">
+        <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="mobile-nav-link" rel="external" target="_blank">git.OSChina</a>
+      </li>
+    </ul>
+    
+      <ul class="topnav"><li id="welcome"><strong class="mobile-nav-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="mobile-nav-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="mobile-nav-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="mobile-nav-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="mobile-nav-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="mobile-nav-title">Data processing</strong><ul><li id="Projection"><strong class="mobile-nav-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="mobile-nav-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="mobile-nav-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="mobile-nav-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="mobile-nav-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="mobile-nav-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="mobile-nav-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="mobile-nav-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="mobile-nav-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="mobile-nav-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="mobile-nav-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="mobile-nav-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="mobile-nav-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="mobile-nav-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="mobile-nav-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="mobile-nav-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="mobile-nav-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="mobile-nav-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="mobile-nav-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="mobile-nav-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="mobile-nav-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="mobile-nav-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="mobile-nav-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="mobile-nav-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="mobile-nav-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="mobile-nav-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="mobile-nav-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="mobile-nav-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="mobile-nav-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="mobile-nav-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="mobile-nav-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="mobile-nav-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="mobile-nav-link">Raster query</a></li></ul></li><li id="Map"><strong class="mobile-nav-title">Mapping</strong><ul><li id="Thematic"><strong class="mobile-nav-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="mobile-nav-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="mobile-nav-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="mobile-nav-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="mobile-nav-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="mobile-nav-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="mobile-nav-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="mobile-nav-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="mobile-nav-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="mobile-nav-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="mobile-nav-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="mobile-nav-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="mobile-nav-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="mobile-nav-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="mobile-nav-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="mobile-nav-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="mobile-nav-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="mobile-nav-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="mobile-nav-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="mobile-nav-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="mobile-nav-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="mobile-nav-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="mobile-nav-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="mobile-nav-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="mobile-nav-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="mobile-nav-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="mobile-nav-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="mobile-nav-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="mobile-nav-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="mobile-nav-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="mobile-nav-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="mobile-nav-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="mobile-nav-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="mobile-nav-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="mobile-nav-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="mobile-nav-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="mobile-nav-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="mobile-nav-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="mobile-nav-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="mobile-nav-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="mobile-nav-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="mobile-nav-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="mobile-nav-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="mobile-nav-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="mobile-nav-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="mobile-nav-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="mobile-nav-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="mobile-nav-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="mobile-nav-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="mobile-nav-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="mobile-nav-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="mobile-nav-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="mobile-nav-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="mobile-nav-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="mobile-nav-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="mobile-nav-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="mobile-nav-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="mobile-nav-link">FAQ</a></li></ul></li><li id="News"><strong class="mobile-nav-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="mobile-nav-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="mobile-nav-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="mobile-nav-link">Cross 8C(2017) New Feature</a></li></ul></li></ul>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/Map/ThematicMap.html">
+      
+        <option value="zh">简体中文</option>
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/SuperMap-iDesktop-Cross/js/lang_select.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/toc.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/mobile_nav.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.10.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/slider.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.5.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/sidebar.js"></script>
+<!-- endbuild -->
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.css" /-->
+<link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/docsearch.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+var host=window.location.host;
+if(host=='supermap-idesktop.github.io')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else if(host=='')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else(host=='support.supermap.com.cn')
+{
+  docsearch({
+    apiKey: '19f860b1fcffb4b23a7b2f928e8b0692',
+    indexName: 'supermap-cn',
+    inputSelector: '#search-input'
+  });
+}
+</script>
+
+
+</body>
+</html>

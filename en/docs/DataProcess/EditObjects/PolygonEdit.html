@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Region Operation | SuperMap iDesktop Cross 9D</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/PolygonEdit.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="zh" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html">
+    
+      <link rel="alternative" hreflang="en" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html/en">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/SuperMap-iDesktop-Cross/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <!-- RSS -->
+  <link rel="alternate" href="/SuperMap-iDesktop-Cross/atom.xml" title="SuperMap iDesktop Cross 9D">
+  <!-- Open Graph -->
+   <!--<meta name="description" content="Edit operation includes: group, union, Xor, erase, donut, Object Split, Ungroup, etc. Group　　Group objects of the same type or multiple types in the current layer as a compound object.  It groups ob">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Region Operation">
+<meta property="og:url" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/PolygonEdit.html">
+<meta property="og:site_name" content="SuperMap iDesktop Cross 9D">
+<meta property="og:description" content="Edit operation includes: group, union, Xor, erase, donut, Object Split, Ungroup, etc. Group　　Group objects of the same type or multiple types in the current layer as a compound object.  It groups ob">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Group.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Group1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Group2.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Group3.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Xor.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Xor1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Xor2.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Xor3.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Erase1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/ExternalErase.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/CutByChoosePolygon.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Hole1.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Hole.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Apart.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/ProtectedDecompose.png">
+<meta property="og:updated_time" content="2018-01-16T07:29:40.506Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Region Operation">
+<meta name="twitter:description" content="Edit operation includes: group, union, Xor, erase, donut, Object Split, Ungroup, etc. Group　　Group objects of the same type or multiple types in the current layer as a compound object.  It groups ob">
+<meta name="twitter:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Group.png">
+<meta property="fb:admins" content="100000247608790">-->
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/SuperMap-iDesktop-Cross//en" id="logo">SuperMap iDesktop Cross</a>
+    </h1>
+    <h2 id="Productname">SuperMap iDesktop Cross</h2>
+    <nav id="main-nav">
+      <!--<a class="main-nav-link" href="/SuperMap-iDesktop-Cross/">Home</a>-->
+      <a href="/SuperMap-iDesktop-Cross/en/" class="main-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="main-nav-link">Help</a>
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="main-nav-link"><i class="fa fa-git"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="docs/DataProcess/EditObjects/PolygonEdit.html">
+        
+          <option value="zh">简体中文</option>
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Region Operation</h1>
+                <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross-Docs/blob/master/source/en/docs/DataProcess/EditObjects/PolygonEdit.md" class="article-edit-link" title="Get Page Source File"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>　　Edit operation includes: group, union, Xor, erase, donut, Object Split, Ungroup, etc.</p>
+<h3 id="Group" class="article-heading"><a href="#Group" class="headerlink" title="Group"></a>Group<a class="article-anchor" href="#Group" aria-hidden="true"></a></h3><p>　　Group objects of the same type or multiple types in the current layer as a compound object.</p>
+<ul>
+<li>It groups objects with the same or different types together to generate a new compound object. For line and region layers, objects of the same type can be grouped together. For CAD compound layers, different types of objects can be grouped together. </li>
+<li>The system field (except SmUserID) values in the attribute information of the newly generated compound object are assigned by the system. The SmUserID and non-system fields will inherit the corresponding information of the object that has the minimal SmID value involving in the group operation.</li>
+<li>It supports the group operation for cross layer geometric objects.</li>
+<li>It doesn’t support to group points.</li>
+<li>When the number of overlayed regions is even, the overlapped area after being grouped will be white, and is a part of the result.</li>
+</ul>
+<p>　　The detail steps are: select one or more objects in an editable layer, group it or them by clicking on “Object Operation” &gt; “Region Operation” &gt; “Group”, also you can select “Group” on the context-menu.</p>
+<p><strong>Difference Between Group and Union</strong></p>
+<ul>
+<li>The union operation can only be performed on objects of the same type to generate complex objects; the group operation can be performed on different types of objects to generate compound objects.</li>
+<li>The union operation cannot be performed on point, line objects; the group operation can be performed on text objects, and point, line objects in compound datasets. </li>
+<li>Union applies to region layer, and CAD layer (object of the same type), group applies to line layer, region layer, text layer and CAD layer.</li>
+<li>Union can only applies to the object of the same type to create complex object, but group can apply to different type of object to create compound object.</li>
+<li>The source object in the union operation is dissolved as a sample or complex object; but the source object in the group operation is group to a block and become a compound object, and not dissolved.</li>
+<li>In the union computing, non-system field and field  SmUserID is processed in multiple methods (retain the first, null, sum and average); In the group, non-system field SmUserID will retain the attribute value of the SmID field of the source object.</li>
+</ul>
+<p>　　<img src="img/Group.png" alt=""></p>
+<p><strong>Note</strong></p>
+<ul>
+<li>When performing union on the region layer, the overlapped part is in white as a part of the result, not missing. </li>
+<li>If one region feature is contained by another region feature when you union them, the result will be a region like a donut.</li>
+</ul>
+<h3 id="Union" class="article-heading"><a href="#Union" class="headerlink" title="Union"></a>Union<a class="article-anchor" href="#Union" aria-hidden="true"></a></h3><p>　　In practice, we may need to merge two or more objects as one object.</p>
+<p>　　During the union operation, there will be a variety of special circumstances. These cases are described separately as follows. </p>
+<ol>
+<li>Current layer is region layer.</li>
+</ol>
+<ul>
+<li><p>If the region objects involved in an object operation intersect at points or these objects are neither intersectant nor adjacent, then these region objects will be merged into a complex region object.</p>
+<p><img src="img/Group1.png" alt=""></p>
+</li>
+<li><p>If the region objects involved in an object operation intersect at lines, adjacent edges of these region objects will disappear, and the objects will be merged into a simple region object.</p>
+<p><img src="img/Group2.png" alt=""></p>
+</li>
+<li><p>If the region objects involved in an object operation intersect at regions, these region objects will be merged into a simple region object.</p>
+<p><img src="img/Group3.png" alt=""></p>
+</li>
+</ul>
+<ol>
+<li>Current layers are compound layers.</li>
+</ol>
+<ul>
+<li>In CAD layers, when line objects, curve objects, elliptic arc objects and arc objects are involved in an operation, the type of the newly generated object will be a line object; when region objects, rectangle objects, circle objects and oblique ellipse objects are involved in an operation, the type of the newly generated object will be a region object.</li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Select one or more objects in an editable layer, then click on “Object Operation” &gt; “Region Operation” &gt; “Union”, and Union dialog box pops up.</li>
+<li>Set how to assign value to attribute of result object, there are four methods:</li>
+</ol>
+<ul>
+<li>Null: means the value of this field is Null in the result union object.</li>
+<li>Sum: means the value of this field in the result union object is the sum of corresponding fields of all union objects. Numeric fields are directly summed. For text fields, the text of multiple objects is automatically connected by SmID order.</li>
+<li>Weighted Mean: means the value (must be a numeric field) of this field in the result union object is the average of corresponding fields of all union objects. It can calculate the simple average or weighted average. The default mode is calculating simple average. </li>
+</ul>
+<p>　　Select the Weighted Mean radio button, click the right drop-down button and select the No Weighted Field (Mean) item. It means that when weighted fields are not used, a simple average would be calculated, i.e. sum all selected fields of original objects and then divide by the total number of original objects.</p>
+<p>　　If a field is selected in the drop-down menu on the right side of the Weighted Mean radio button, it means this field is used to calculate weighted averaged with the selected filed in the list box.</p>
+<ul>
+<li>Save Geometry: indicates which selected object has the same value in this field as that of the result object.</li>
+</ul>
+<ol>
+<li>After finishing to set the parameters, click OK button to complete the operation.</li>
+</ol>
+<h3 id="Intersect" class="article-heading"><a href="#Intersect" class="headerlink" title="Intersect"></a>Intersect<a class="article-anchor" href="#Intersect" aria-hidden="true"></a></h3><p>　　Delete the parts that are not common to two or more objects. Please note that it do not support the intersect between two lines.</p>
+<p><strong>Instructions</strong></p>
+<ul>
+<li>If the intersection of the region objects involved in an object operation is not an empty set, a simple object of the mutual intersection part will be generated after these objects intersecting each other. </li>
+<li>If the intersection of the region objects involved in an object operation is an empty set, all the original objects will be removed and no object will be generated after these objects intersecting each other.</li>
+<li>The generated object need to be set whose property information it will retain and what operation will be done to field value. For instruction of each parameter, please reference <a href="#Union">Union</a></li>
+<li>In CAD layers, when region objects, rectangle objects, circle objects and oblique ellipse objects are involved in an operation, the type of newly generated object is a region object.</li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Select one or more objects in an editable layer, then click on “Object Operation” &gt; “Region Operation” &gt; “Intersect”, and Intersect dialog box pops up.</li>
+<li>Set how to assign value to attribute of result object, and then click OK.</li>
+</ol>
+<h3 id="XOR" class="article-heading"><a href="#XOR" class="headerlink" title="XOR"></a>XOR<a class="article-anchor" href="#XOR" aria-hidden="true"></a></h3><p>　　Get the union of two or more objects after removing the common parts. During the XOR operation, there will be a variety of special circumstances. These cases are described separately as follows.</p>
+<ul>
+<li>If the objects involved in an operation intersect only at points or don’t intersect, these region objects will be merged into a complex object.</li>
+</ul>
+<p>　　<img src="img/Xor.png" alt=""></p>
+<ul>
+<li>If the objects involved in an operation intersect only at lines, adjacent edges of these objects will disappear, and the objects will be merged into a simple object.</li>
+</ul>
+<p>　　<img src="img/Xor1.png" alt=""></p>
+<ul>
+<li>If the objects involved in an operation intersect each other at regions (not coincide), the mutual intersection part will be removed, and the objects will be merged into a complex object.</li>
+</ul>
+<p>　　<img src="img/Xor2.png" alt=""></p>
+<ul>
+<li>If the objects involved in an operation intersect each other at regions without mutual intersection (common intersection part), all objects involved in the operation will be merged into a simple region object. </li>
+</ul>
+<p>　　<img src="img/Xor3.png" alt=""></p>
+<ul>
+<li>If the objects involved in the operation coincide with each other, all objects involved in the operation will be deleted. </li>
+</ul>
+<p>Basic Steps:</p>
+<ol>
+<li>Select one or more objects in an editable layer, then click on “Object Operation” &gt; “Region Operation” &gt; “XOr”, and XOr dialog box pops up.</li>
+<li>Set how to assign value to attribute of result object, and then click OK.</li>
+</ol>
+<h3 id="Erase" class="article-heading"><a href="#Erase" class="headerlink" title="Erase"></a>Erase<a class="article-anchor" href="#Erase" aria-hidden="true"></a></h3><p>　　You can erase a portion where an object overlaps another object, also you can delete the other section besides the overlapping portion according to object range. The instruction of Erase is detailed below.</p>
+<ul>
+<li>Only a selected region object can be as an erasing object. The layer where target object locates must be editable.</li>
+<li>The erase functionality only supports line, region and CAD layers.</li>
+<li>The Target object and the erasing object can’t be the same object.</li>
+<li>The target object can be multiple line objects or region object, but the erasing object must be a region object.</li>
+<li>Erase operation data standardization has certain requirements. It is recommended that check data topology before the erase operation.</li>
+</ul>
+<p>　　<img src="img/Erase1.png" alt=""></p>
+<p>　　<img src="img/ExternalErase.png" alt=""></p>
+<p>　　Basic Steps:</p>
+<ol>
+<li>Make the layer where target object locates editable, the “Erase” option will be available when a region object is selected.</li>
+<li>On the “Object Operation” menu, selecting “Erase” in “Region Operation”.</li>
+<li>Moving mouse into map window and selecting the target object to perform Erase operation, the switch of erasing sections can be achieved by pressing Ctrl.</li>
+<li>Multiple selected objects can be erased at the same time, then right-click to complete the operation.</li>
+</ol>
+<h3 id="Object-Split" class="article-heading"><a href="#Object-Split" class="headerlink" title="Object Split"></a>Object Split<a class="article-anchor" href="#Object-Split" aria-hidden="true"></a></h3><p>　　Split the line or region object by the selected object.</p>
+<ul>
+<li>The “Object Split” can be available when one or more objects are selected in an editable layer.</li>
+<li>This function applies for line objects or region objects  in line layer, region layer or CAD layer.</li>
+<li>A line or region object can be split only when the splitting line is across the object wholly if an object split by a line object.</li>
+</ul>
+<p>　　Basic Steps:</p>
+<ol>
+<li>Select one or more objects to split in an editable layer.</li>
+<li>On the “Object Operation” menu, selecting “Object Split” in “Region Operation”.</li>
+<li>When moving the mouse to the current map window, it prompts &quot;Please select split object&quot;, select a line or region object, according to the intersection of two objects, the object will be segmented.</li>
+</ol>
+<p>　　<img src="img/CutByChoosePolygon.png" alt=""></p>
+<h3 id="Doughnut-and-Island-Polygon" class="article-heading"><a href="#Doughnut-and-Island-Polygon" class="headerlink" title="Doughnut and Island Polygon"></a>Doughnut and Island Polygon<a class="article-anchor" href="#Doughnut-and-Island-Polygon" aria-hidden="true"></a></h3><p>　　This kind of polygon is a complex geometry object type. In the status of &quot;Editable&quot;, operate two or more region objects that have inclusion relation in the overlap regions (Delete or reserve). A doughnut and island polygon is created. If there is s lake in a region, a doughnut and island polygon is created.</p>
+<p><strong>Instructions</strong></p>
+<ul>
+<li>The doughnut and island polygons is used in region layer or the CAD layer.</li>
+<li>Select two or more region objects to conduct doughnut and island polygons, as shown below:  <ul>
+<li>If the selected regions don’t interact or intersect at a point, a complex object will be created.</li>
+<li>If the selected region objects intersect in line, these region objects will be merged to a complex object.</li>
+<li>If the selected region objects interact in region and don’t overlay, when the region number is odd number, the intersection of regions is reserved and a complex object is created. When the region number is even number, the intersection of regions is deleted and a complex object is created.</li>
+</ul>
+</li>
+</ul>
+<p>　　<img src="img/Hole1.png" alt=""></p>
+<ul>
+<li>If the selected region objects fully coincide and the number is odd number, a region object will be crested; When the number is even number, all the region objects will be deleted. For example: Conduct the doughnut and island polygons for three overlapped circles, finally a circle region is created; If there are only two circles. the result is null.</li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Select one or more region objects in an editable layer, and then select “Donut and Island Polygon” on “Region Operation” of “Object Operation” menu.</li>
+<li>Set property information of result object in the pop-up dialog box, you can reference “<strong>Union</strong>“ for detail instruction.</li>
+<li>Click OK button to perform the operation.</li>
+</ol>
+<p>　　<img src="img/Hole.png" alt=""></p>
+<h3 id="Ungroup" class="article-heading"><a href="#Ungroup" class="headerlink" title="Ungroup"></a>Ungroup<a class="article-anchor" href="#Ungroup" aria-hidden="true"></a></h3><p>　　Ungroup one or more compound objects into simple or compound objects.</p>
+<ul>
+<li>The ungroup function applies to line layers, region layers and CAD layers.</li>
+<li>It can only be performed for complex or compound objects; simple objects cannot be ungrouped.</li>
+<li>For complex objects (the object that contains multiple sub objects) ungrouping, all generated single objects are simple objects. For compound objects, after multiple single objects are generated, if there is still any compound object exists among these result single objects, you can continue perform the ungroup operation until all result objects become simple objects. The figure below shows a hole polygon. After performing the ungroup operation two single objects are generated:</li>
+<li>In the attribute information of the newly generated object, values of the SmUserID field and non-system field will keep that of the original object, and the other system field values are assigned by the system. </li>
+</ul>
+<p>Basic Steps:</p>
+<ol>
+<li>In an editable layer, select one or more complex objects or compound objects.</li>
+<li>Select “Ungroup” on “Region Operation” of “Object Operation” menu or right-click and select “Ungroup” to perform the operation.</li>
+<li>If there is still any compound object exists among the ungrouped resulting objects, you can continue perform the ungroup operation until all result objects become simple objects. As shown below:</li>
+</ol>
+<p>　　<img src="img/Apart.png" alt=""></p>
+<h3 id="Protection-Decomposition" class="article-heading"><a href="#Protection-Decomposition" class="headerlink" title="Protection Decomposition"></a>Protection Decomposition<a class="article-anchor" href="#Protection-Decomposition" aria-hidden="true"></a></h3><p>　　It is to decompose the region object which has multi-layers Island hole nesting relationship into only one layer. The difference between protective decomposition and decomposition is: if the region has Island hole nesting relationship, protective decomposition will keep the simplest layer, but decomposition will not.</p>
+<ul>
+<li>It can be used for a region or CAD layer.</li>
+<li>Only a complex object or compound object can be decomposed, simple objects can not be decomposed.</li>
+<li>For complex objects (objects that contain multiple sub objects), the generated objects are single objects (except the island hole region); for the compound object, firstly it is decomposed into multiple objects, if the object is still a compound object, it will be decomposed again into simple objects. As shown in the following diagram it is a combination of an island hole object with another object, after the protection decomposition, the new objects are obtained as a island hole object and a single object:</li>
+</ul>
+<p>　　<img src="img/ProtectedDecompose.png" alt=""></p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-01-16T07:29:40.506Z" itemprop="dateModified">Last updated: 2018-01-16</time>
+                <a href="/SuperMap-iDesktop-Cross/en/docs/index.html" class="article-footer-next" title="sidebar.docs.undefined"><span>Next Page</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Group"><span class="toc-text">Group</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Union"><span class="toc-text">Union</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Intersect"><span class="toc-text">Intersect</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#XOR"><span class="toc-text">XOR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Erase"><span class="toc-text">Erase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Object-Split"><span class="toc-text">Object Split</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Doughnut-and-Island-Polygon"><span class="toc-text">Doughnut and Island Polygon</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ungroup"><span class="toc-text">Ungroup</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Protection-Decomposition"><span class="toc-text">Protection Decomposition</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><ul class="topnav"><li id="welcome"><strong class="sidebar-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="sidebar-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="sidebar-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="sidebar-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="sidebar-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="sidebar-title">Data processing</strong><ul><li id="Projection"><strong class="sidebar-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="sidebar-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="sidebar-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="sidebar-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="sidebar-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="sidebar-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="sidebar-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="sidebar-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="sidebar-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="sidebar-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="sidebar-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="sidebar-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="sidebar-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="sidebar-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="sidebar-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="sidebar-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="sidebar-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="sidebar-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="sidebar-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="sidebar-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="sidebar-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="sidebar-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="sidebar-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="sidebar-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="sidebar-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="sidebar-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="sidebar-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="sidebar-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="sidebar-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="sidebar-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="sidebar-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="sidebar-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="sidebar-link">Raster query</a></li></ul></li><li id="Map"><strong class="sidebar-title">Mapping</strong><ul><li id="Thematic"><strong class="sidebar-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="sidebar-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="sidebar-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="sidebar-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="sidebar-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="sidebar-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="sidebar-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="sidebar-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="sidebar-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="sidebar-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="sidebar-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="sidebar-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="sidebar-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="sidebar-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="sidebar-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="sidebar-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="sidebar-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="sidebar-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="sidebar-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="sidebar-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="sidebar-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="sidebar-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="sidebar-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="sidebar-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="sidebar-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="sidebar-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="sidebar-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="sidebar-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="sidebar-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="sidebar-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="sidebar-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="sidebar-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="sidebar-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="sidebar-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="sidebar-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="sidebar-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="sidebar-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="sidebar-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="sidebar-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="sidebar-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="sidebar-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="sidebar-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="sidebar-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="sidebar-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="sidebar-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="sidebar-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="sidebar-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="sidebar-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="sidebar-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="sidebar-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="sidebar-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="sidebar-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="sidebar-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="sidebar-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="sidebar-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="sidebar-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="sidebar-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="sidebar-link">FAQ</a></li></ul></li><li id="News"><strong class="sidebar-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="sidebar-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="sidebar-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="sidebar-link">Cross 8C(2017) New Feature</a></li></ul></li></ul></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2018 <a href="http://www.supermap.com/" target="_blank">iDesktop</a><br>
+      Documentation Version 1.0.0
+    </div>
+    <div id="footer-links">
+      <!--a href="https://twitter.com/" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a-->
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="footer-link" target="_blank"><i class="fa fa-git"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/SuperMap-iDesktop-Cross/en/" class="mobile-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="mobile-nav-link">Help</a>
+      <li class="mobile-nav-item">
+        <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="mobile-nav-link" rel="external" target="_blank">git.OSChina</a>
+      </li>
+    </ul>
+    
+      <ul class="topnav"><li id="welcome"><strong class="mobile-nav-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="mobile-nav-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="mobile-nav-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="mobile-nav-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="mobile-nav-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="mobile-nav-title">Data processing</strong><ul><li id="Projection"><strong class="mobile-nav-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="mobile-nav-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="mobile-nav-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="mobile-nav-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="mobile-nav-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="mobile-nav-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="mobile-nav-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="mobile-nav-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="mobile-nav-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="mobile-nav-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="mobile-nav-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="mobile-nav-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="mobile-nav-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="mobile-nav-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="mobile-nav-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="mobile-nav-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="mobile-nav-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="mobile-nav-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="mobile-nav-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="mobile-nav-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="mobile-nav-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="mobile-nav-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="mobile-nav-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="mobile-nav-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="mobile-nav-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="mobile-nav-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="mobile-nav-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="mobile-nav-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="mobile-nav-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="mobile-nav-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="mobile-nav-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="mobile-nav-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="mobile-nav-link">Raster query</a></li></ul></li><li id="Map"><strong class="mobile-nav-title">Mapping</strong><ul><li id="Thematic"><strong class="mobile-nav-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="mobile-nav-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="mobile-nav-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="mobile-nav-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="mobile-nav-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="mobile-nav-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="mobile-nav-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="mobile-nav-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="mobile-nav-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="mobile-nav-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="mobile-nav-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="mobile-nav-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="mobile-nav-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="mobile-nav-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="mobile-nav-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="mobile-nav-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="mobile-nav-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="mobile-nav-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="mobile-nav-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="mobile-nav-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="mobile-nav-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="mobile-nav-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="mobile-nav-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="mobile-nav-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="mobile-nav-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="mobile-nav-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="mobile-nav-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="mobile-nav-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="mobile-nav-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="mobile-nav-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="mobile-nav-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="mobile-nav-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="mobile-nav-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="mobile-nav-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="mobile-nav-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="mobile-nav-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="mobile-nav-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="mobile-nav-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="mobile-nav-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="mobile-nav-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="mobile-nav-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="mobile-nav-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="mobile-nav-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="mobile-nav-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="mobile-nav-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="mobile-nav-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="mobile-nav-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="mobile-nav-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="mobile-nav-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="mobile-nav-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="mobile-nav-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="mobile-nav-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="mobile-nav-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="mobile-nav-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="mobile-nav-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="mobile-nav-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="mobile-nav-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="mobile-nav-link">FAQ</a></li></ul></li><li id="News"><strong class="mobile-nav-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="mobile-nav-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="mobile-nav-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="mobile-nav-link">Cross 8C(2017) New Feature</a></li></ul></li></ul>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/DataProcess/EditObjects/PolygonEdit.html">
+      
+        <option value="zh">简体中文</option>
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/SuperMap-iDesktop-Cross/js/lang_select.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/toc.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/mobile_nav.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.10.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/slider.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.5.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/sidebar.js"></script>
+<!-- endbuild -->
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.css" /-->
+<link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/docsearch.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+var host=window.location.host;
+if(host=='supermap-idesktop.github.io')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else if(host=='')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else(host=='support.supermap.com.cn')
+{
+  docsearch({
+    apiKey: '19f860b1fcffb4b23a7b2f928e8b0692',
+    indexName: 'supermap-cn',
+    inputSelector: '#search-input'
+  });
+}
+</script>
+
+
+</body>
+</html>

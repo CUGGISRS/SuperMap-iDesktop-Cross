@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Line Operation | SuperMap iDesktop Cross 9D</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/LineEdit.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="zh" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html">
+    
+      <link rel="alternative" hreflang="en" href="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html/en">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/SuperMap-iDesktop-Cross/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/SuperMap-iDesktop-Cross/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/SuperMap-iDesktop-Cross/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" />
+  <!-- RSS -->
+  <link rel="alternate" href="/SuperMap-iDesktop-Cross/atom.xml" title="SuperMap iDesktop Cross 9D">
+  <!-- Open Graph -->
+   <!--<meta name="description" content="Explode　　The line objects will be divided into some straight lines in smallest unit. A straight line object is a simple object which must have two ends. 　　As shown below, the line object has 5 nodes,">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Line Operation">
+<meta property="og:url" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/LineEdit.html">
+<meta property="og:site_name" content="SuperMap iDesktop Cross 9D">
+<meta property="og:description" content="Explode　　The line objects will be divided into some straight lines in smallest unit. A straight line object is a simple object which must have two ends. 　　As shown below, the line object has 5 nodes,">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Explode.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Extend.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Trim.png">
+<meta property="og:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/JoinLine.png">
+<meta property="og:updated_time" content="2018-01-16T07:29:40.373Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Line Operation">
+<meta name="twitter:description" content="Explode　　The line objects will be divided into some straight lines in smallest unit. A straight line object is a simple object which must have two ends. 　　As shown below, the line object has 5 nodes,">
+<meta name="twitter:image" content="http://supermap-idesktop.github.io/SuperMap-iDesktop-Cross/en/docs/DataProcess/EditObjects/img/Explode.png">
+<meta property="fb:admins" content="100000247608790">-->
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/SuperMap-iDesktop-Cross//en" id="logo">SuperMap iDesktop Cross</a>
+    </h1>
+    <h2 id="Productname">SuperMap iDesktop Cross</h2>
+    <nav id="main-nav">
+      <!--<a class="main-nav-link" href="/SuperMap-iDesktop-Cross/">Home</a>-->
+      <a href="/SuperMap-iDesktop-Cross/en/" class="main-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="main-nav-link">Help</a>
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="main-nav-link"><i class="fa fa-git"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="docs/DataProcess/EditObjects/LineEdit.html">
+        
+          <option value="zh">简体中文</option>
+        
+          <option value="en" selected>English</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Line Operation</h1>
+                <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross-Docs/blob/master/source/en/docs/DataProcess/EditObjects/LineEdit.md" class="article-edit-link" title="Get Page Source File"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h3 id="Explode" class="article-heading"><a href="#Explode" class="headerlink" title="Explode"></a>Explode<a class="article-anchor" href="#Explode" aria-hidden="true"></a></h3><p>　　The line objects will be divided into some straight lines in smallest unit. A straight line object is a simple object which must have two ends.</p>
+<p>　　As shown below, the line object has 5 nodes, after performing the Explode operation, the line object is divided into 4 objects. Right picture shows the result by using the exploded objects to create a thematic map. </p>
+<p>　　<img src="img/Explode.png" alt=""> </p>
+<p><strong>Instruction</strong></p>
+<ul>
+<li>Line layer and CAD layer can activate the Explode function, and in layer, line object must be selected.</li>
+<li>Complex objects also apply to the Explode operation, after performing the operation, the complex objects will be divided into straight lines in smallest unit. </li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Select one or more line objects to explode in editable layer.</li>
+<li>Click on “Object Operation” &gt; “Line Operation” &gt; “Explode” to perform the operation.</li>
+<li>A prompt is shown about how many objects are generated after completing the operation.</li>
+</ol>
+<p><strong>Note</strong>: For those objects who have many nodes, after exploding them, the generated objects are too small and can’t be displayed at a little scale, so the application program filters and displays the objects whose length is greater than 0.4mm.</p>
+<h3 id="Extend" class="article-heading"><a href="#Extend" class="headerlink" title="Extend"></a>Extend<a class="article-anchor" href="#Extend" aria-hidden="true"></a></h3><p>　　The Extend function is used to extend the line objects who are not intersected in the tolerance range to make sure they can be intersected finally.</p>
+<p><strong>Instruction</strong></p>
+<ul>
+<li>In an editable line layer or CAD layer, extending the selected line object (line object in CAD layer) to the specified object (base line). </li>
+<li>To select the extending object, click a position on the target object that close to the baseline.</li>
+<li>In extending mode, if a line object has been selected as a baseline, you can only make other line objects extend to the baseline.</li>
+<li>The extending operation works for line objects that will intersect with the base line after extending. No operation would be performed for line objects that will not intersect with the base line after extending. </li>
+<li>In the line layer, a base line could be any type of line object, such as the straight line, parallel line, circle, etc, as well as the complex line objects. The line to be extended could be any open simple line object, such as the straight line, polyline, arc, multi-segment line, etc. Be noted that the parallel lines are complex objects with two sub objects.</li>
+<li>In the CAD layer, both baseline and the extending line must be line type objects. Object types can be examined through the spatial information in the object attribute.</li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Click on “Object Operation” &gt; “Line Operation” &gt; “Extend”.</li>
+<li>Moving mouse to the map window and a prompt will pop up: Please select a base line. After selecting a line object as the base line, another prompt will show: Please click line object to be extended.</li>
+<li>Click the line object to be extended, and be sure to select a position on the line object that close to the baseline; the endpoint that near the baseline will be extended to the baseline automatically by the application. If you click the endpoint that away from the baseline, it will not be extended.</li>
+<li>If other line objects need to be extended to the baseline, continue to click the line object to be extended. Click ESC key or right-click to finish the operation.</li>
+</ol>
+<p>　　<img src="img/Extend.png" alt=""> </p>
+<h3 id="Trim" class="article-heading"><a href="#Trim" class="headerlink" title="Trim"></a>Trim<a class="article-anchor" href="#Trim" aria-hidden="true"></a></h3><p>　　The Trim tool can removed a intersection segment if one selected line object (baseline) intersects with another line object.</p>
+<p><strong>Instruction</strong></p>
+<ul>
+<li>When using the Trim tool, first you should select a line object as baseline, then click an intersection segment and it will be removed.</li>
+<li>It can trim line layer objects or line objects in the CAD layer, and it requires the object to be trimmed in an editable layer.</li>
+<li>The trim operation only works for line objects that intersect with the baseline. No operation would be performed for line objects not intersect with the base line.</li>
+<li>The object to be trimmed must be a simple line object; the baseline can be a complex line object or a simple line objects but not a compound object.</li>
+<li>When you need to trim multiple lines that all intersect with the same line (base line), firstly you can select a line object as the baseline, and then trim the line objects that intersect with the baseline one by one.</li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Click on “Object Operation” &gt; “Line Operation” &gt; “Trim”.</li>
+<li>Select one line object as a baseline, and then a prompt will be shown: Please select a segment to be trimmed.</li>
+<li>Select the part of the line object that you want to trim off. After trimming, the baseline is still retained, and the part of the line segment that was clicked by the mouse will be deleted. <strong>Note</strong>: The system field (except SmUserID) values of the new object are assigned by the system, and values of non-system fields and the SmUserID field will keep that of the trimmed object.</li>
+</ol>
+<p>　　<img src="img/Trim.png" alt=""></p>
+<h3 id="Join-Line" class="article-heading"><a href="#Join-Line" class="headerlink" title="Join Line"></a>Join Line<a class="article-anchor" href="#Join-Line" aria-hidden="true"></a></h3><p>　　The Join Line function means that some disconnected line objects are connected according to certain rules. There are two modes: end to end, adjacent points. The shape of connected objects are different by different modes.</p>
+<ul>
+<li><strong>End to End</strong>: Connect the start and end points one by one according to the line order. The created line direction is the same with the first line object.</li>
+<li><strong>Connecting the adjacent points</strong>: It doesn’t consider the start and end points, and judge the distance between the endpoints of line objects. Connect the first line endpoint to the nearest endpoint of the line object. The created line direction is the same with the first line object.</li>
+</ul>
+<p>　　<img src="img/JoinLine.png" alt=""></p>
+<p><strong>Instruction</strong></p>
+<ul>
+<li>This function applies to a line layer and CAD layer.</li>
+<li>Only there is a line object being selected in an editable layer, the function can be activated.</li>
+<li>Can’t execute the operation on complex objects and composite objects.</li>
+<li>The order introduction for line objects. When the lines are connected by end to end, it needs to determine the order of the line objects, in order to determine the line object direction. The application has two methods to determine the order of line objects. The first one is pressing the Shift key to select multiple line objects. The line objects connect according to the select order.; Another method is dragging a area by the mouse, and connect the objects with the SMID.</li>
+</ul>
+<p><strong>Basic Steps</strong></p>
+<ol>
+<li>Select two or more line objects to be connected in an editable layer.</li>
+<li>Click on “Object Operation” &gt; “Line Operation” &gt;”End to End” or “Connect Adjacent Points”</li>
+<li>Set an attribute reserved mode for result object in the pop-up dialog box, for details, please reference union in <a href="PolygonEdit.html">Region Operation</a></li>
+</ol>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-01-16T07:29:40.373Z" itemprop="dateModified">Last updated: 2018-01-16</time>
+                <a href="/SuperMap-iDesktop-Cross/en/docs/index.html" class="article-footer-next" title="sidebar.docs.undefined"><span>Next Page</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Explode"><span class="toc-text">Explode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extend"><span class="toc-text">Extend</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Trim"><span class="toc-text">Trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Join-Line"><span class="toc-text">Join Line</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><ul class="topnav"><li id="welcome"><strong class="sidebar-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="sidebar-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="sidebar-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="sidebar-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="sidebar-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="sidebar-title">Data processing</strong><ul><li id="Projection"><strong class="sidebar-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="sidebar-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="sidebar-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="sidebar-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="sidebar-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="sidebar-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="sidebar-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="sidebar-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="sidebar-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="sidebar-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="sidebar-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="sidebar-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="sidebar-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="sidebar-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="sidebar-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="sidebar-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="sidebar-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="sidebar-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="sidebar-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="sidebar-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="sidebar-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="sidebar-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="sidebar-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="sidebar-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="sidebar-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="sidebar-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="sidebar-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="sidebar-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="sidebar-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="sidebar-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="sidebar-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="sidebar-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="sidebar-link">Raster query</a></li></ul></li><li id="Map"><strong class="sidebar-title">Mapping</strong><ul><li id="Thematic"><strong class="sidebar-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="sidebar-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="sidebar-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="sidebar-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="sidebar-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="sidebar-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="sidebar-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="sidebar-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="sidebar-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="sidebar-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="sidebar-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="sidebar-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="sidebar-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="sidebar-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="sidebar-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="sidebar-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="sidebar-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="sidebar-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="sidebar-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="sidebar-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="sidebar-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="sidebar-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="sidebar-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="sidebar-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="sidebar-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="sidebar-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="sidebar-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="sidebar-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="sidebar-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="sidebar-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="sidebar-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="sidebar-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="sidebar-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="sidebar-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="sidebar-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="sidebar-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="sidebar-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="sidebar-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="sidebar-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="sidebar-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="sidebar-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="sidebar-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="sidebar-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="sidebar-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="sidebar-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="sidebar-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="sidebar-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="sidebar-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="sidebar-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="sidebar-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="sidebar-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="sidebar-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="sidebar-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="sidebar-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="sidebar-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="sidebar-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="sidebar-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="sidebar-link">FAQ</a></li></ul></li><li id="News"><strong class="sidebar-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="sidebar-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="sidebar-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="sidebar-link">Cross 8C(2017) New Feature</a></li></ul></li></ul></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2018 <a href="http://www.supermap.com/" target="_blank">iDesktop</a><br>
+      Documentation Version 1.0.0
+    </div>
+    <div id="footer-links">
+      <!--a href="https://twitter.com/" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a-->
+      <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="footer-link" target="_blank"><i class="fa fa-git"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/SuperMap-iDesktop-Cross/en/" class="mobile-nav-link">Home</a><a href="/SuperMap-iDesktop-Cross/en/docs/" class="mobile-nav-link">Help</a>
+      <li class="mobile-nav-item">
+        <a href="http://git.oschina.net/supermap/SuperMap-iDesktop-Cross" class="mobile-nav-link" rel="external" target="_blank">git.OSChina</a>
+      </li>
+    </ul>
+    
+      <ul class="topnav"><li id="welcome"><strong class="mobile-nav-title">Welcome</strong><ul><li id="SuperMap Cross"><a href="/SuperMap-iDesktop-Cross/docs/index.html" class="mobile-nav-link">Product introduce</a></li><li id="License"><a href="/SuperMap-iDesktop-Cross/docs/Install/License.html" class="mobile-nav-link">License configuration</a></li></ul></li><li id="getting_started"><strong class="mobile-nav-title">Getting started</strong><ul><li id="GeoFormates"><a href="/SuperMap-iDesktop-Cross/docs/Basic/GeoFormates.html" class="mobile-nav-link">Data conversion</a></li></ul></li><li id="DataProcess"><strong class="mobile-nav-title">Data processing</strong><ul><li id="Projection"><strong class="mobile-nav-subtitle">Projection</strong><ul><li id="AboutMapProjection"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/AboutMapProjection.html" class="mobile-nav-link">Projection Overview</a></li><li id="ProjectionUsed"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/ProjectionUsed.html" class="mobile-nav-link">Common projection</a></li><li id="PrjCoordSysType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/PrjCoordSysType.html" class="mobile-nav-link">Coordinate system type</a></li><li id="SetPrjCoordSys"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/Projection/SetPrjCoordSys.html" class="mobile-nav-link">Projection settings</a></li></ul></li><li id="Topo"><strong class="mobile-nav-subtitle">Topology processing</strong><ul><li id="TopoProcess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcess.html" class="mobile-nav-link">Rule of topology processing</a></li><li id="TopoPreprocess"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoPreprocess.html" class="mobile-nav-link">Topology preprocessing</a></li><li id="TopoProcessLine"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopoProcessLine.html" class="mobile-nav-link">Validate line topology</a></li><li id="TopotoPolygon"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/TopotoPolygon.html" class="mobile-nav-link">Region by topology</a></li></ul></li><li id="SQL"><strong class="mobile-nav-subtitle">SQL query</strong><ul><li id="SQLQuery_Expression"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQuery_Expression.html" class="mobile-nav-link">Construct SQL expression</a></li><li id="SQLQueryDia"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDia.html" class="mobile-nav-link">SQL query</a></li><li id="SQLQueryDiaFuction"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLQueryDiaFuction.html" class="mobile-nav-link">SQL operators</a></li><li id="SQLSupporttedType"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/SQLSupporttedType.html" class="mobile-nav-link">SQL query engine</a></li></ul></li></ul></li><li id="Objects"><strong class="mobile-nav-title">Object operation</strong><ul><li id="CreateGeometry"><strong class="mobile-nav-subtitle">Object drawing</strong><ul><li id="AboutCreateGeometry"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/AboutCreateGeometry.html" class="mobile-nav-link">Object Drawing Overview</a></li><li id="Point"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Point.html" class="mobile-nav-link">Draw point</a></li><li id="DrawCurve"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawCurve.html" class="mobile-nav-link">Draw line</a></li><li id="DrawQuadRangle"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/DrawQuadRangle.html" class="mobile-nav-link">Draw region</a></li><li id="Text"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/DataEdit/Text.html" class="mobile-nav-link">Draw text</a></li></ul></li><li id="EdittingGeometry"><strong class="mobile-nav-subtitle">Object edit</strong><ul><li id="PolygonEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/PolygonEdit.html" class="mobile-nav-link">Region object edit</a></li><li id="LineEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/LineEdit.html" class="mobile-nav-link">Line object edit</a></li><li id="VertexEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/VertexEdit.html" class="mobile-nav-link">Vertex edit</a></li><li id="ObjectsConversion"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/ObjectsConversion.html" class="mobile-nav-link">Conversion of object type</a></li><li id="OtherEdit"><a href="/SuperMap-iDesktop-Cross/docs/DataProcess/EditObjects/OtherEdit.html" class="mobile-nav-link">Other edit</a></li></ul></li></ul></li><li id="DataAnalyst"><strong class="mobile-nav-title">Data analysis</strong><ul><li id="BufferTheory"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferTheory.html" class="mobile-nav-link">Buffer analysis theory</a></li><li id="SingleBuffer"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/SingleBuffer.html" class="mobile-nav-link">Single buffer analysis</a></li><li id="BufferAnalyst_Example"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/BufferAnalyst_Example.html" class="mobile-nav-link">Example of buffer</a></li><li id="FindRasterVaule"><a href="/SuperMap-iDesktop-Cross/docs/DataAnalyst/FindRasterVaule.html" class="mobile-nav-link">Raster query</a></li></ul></li><li id="Map"><strong class="mobile-nav-title">Mapping</strong><ul><li id="Thematic"><strong class="mobile-nav-subtitle">Thematic map</strong><ul><li id="ThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap.html" class="mobile-nav-link">Thematic map overview</a></li><li id="CreatThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CreatThematicMap.html" class="mobile-nav-link">Create thematic map</a></li></ul></li><li id="ModifyMap"><strong class="mobile-nav-subtitle">Modify thematic map</strong><ul><li id="ModifyThematicMap"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/ModifyThematicMap.html" class="mobile-nav-link">Public properties</a></li><li id="UniqueValueProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/UniqueValueProperties.html" class="mobile-nav-link">Unique thematic map</a></li><li id="RangesMapGroupDia"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/RangesMapGroupDia.html" class="mobile-nav-link">Range thematic map</a></li><li id="LabelProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/LabelProperties.html" class="mobile-nav-link">Label thematic map</a></li><li id="GraphProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraphProperties.html" class="mobile-nav-link">Statistics thematic map</a></li><li id="GraduatedSymbolProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/GraduatedSymbolProperties.html" class="mobile-nav-link">Graduated symbol thematic map</a></li><li id="DotDensityProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/DotDensityProperties.html" class="mobile-nav-link">Point density thematic map</a></li><li id="CustomizeProperties"><a href="/SuperMap-iDesktop-Cross/docs/Map/ThematicMap/CustomizeProperties.html" class="mobile-nav-link">Customize thematic map</a></li></ul></li><li id="Style"><a href="/SuperMap-iDesktop-Cross/docs/Map/Style.html" class="mobile-nav-link">Set layer style</a></li><li id="OverlapDisplayed"><a href="/SuperMap-iDesktop-Cross/docs/Map/OverlapDisplayed.html" class="mobile-nav-link">Auto-avoid and overlay</a></li><li id="Measuregroup"><a href="/SuperMap-iDesktop-Cross/docs/Map/Measuregroup.html" class="mobile-nav-link">Map measurement</a></li><li id="LayerSetting"><a href="/SuperMap-iDesktop-Cross/docs/Map/LayerSetting.html" class="mobile-nav-link">Layer property</a></li><li id="MapSetting_Basic"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Basic.html" class="mobile-nav-link">Map basic property</a></li><li id="MapSetting_Range"><a href="/SuperMap-iDesktop-Cross/docs/Map/MapSetting_Range.html" class="mobile-nav-link">Map property "Bounds"</a></li></ul></li><li id="Cache"><strong class="mobile-nav-title">Map Cache</strong><ul><li id="SingleProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/SingleProcessCache.html" class="mobile-nav-link">Single process map cache</a></li><li id="MultiProcessesCache"><strong class="mobile-nav-subtitle">Multiple processes map cache</strong><ul><li id="MultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/MultiProcessCache.html" class="mobile-nav-link">Multi-process map cache</a></li><li id="CreateMultiProcessCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CreateMultiProcessCache.html" class="mobile-nav-link">New map cache (multiple tasks)</a></li><li id="ExecuteMultiProcessCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/ExecuteMultiProcessCaching.html" class="mobile-nav-link">Execute caching task</a></li></ul></li><li id="CacheCheck"><a href="/SuperMap-iDesktop-Cross/docs/Cache/CacheCheck.html" class="mobile-nav-link">Check cache</a></li><li id="UpdateCache"><a href="/SuperMap-iDesktop-Cross/docs/Cache/UpdateCache.html" class="mobile-nav-link">Update cache</a></li><li id="RecoverCaching"><a href="/SuperMap-iDesktop-Cross/docs/Cache/RecoverCaching.html" class="mobile-nav-link">Continue to pass cache</a></li></ul></li><li id="SpatialStatisticalAnalysis"><strong class="mobile-nav-title">Spatial statistics</strong><ul><li id="SpatialStatisticalAnalysisSummary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialStatisticalAnalysisSummary.html" class="mobile-nav-link">Spatial statistics overview</a></li><li id="BasicVocabulary"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/BasicVocabulary.html" class="mobile-nav-link">Basic words</a></li><li id="MeasureGeographicDistr"><strong class="mobile-nav-subtitle">Measuring geographic analysis</strong><ul><li id="MeasureGeographicDistributions"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureGeographicDistributions.html" class="mobile-nav-link">Measuring geographic analysis overview</a></li><li id="CentralFeature"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/CentralFeature.html" class="mobile-nav-link">Central feature</a></li><li id="MeanCenter"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenter.html" class="mobile-nav-link">Mean center</a></li><li id="MeanCenterResult"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeanCenterResult.html" class="mobile-nav-link">Median center</a></li><li id="MeasureDirection"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureDirection.html" class="mobile-nav-link">Directional distribution</a></li><li id="MeasureLinearDirectional"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureLinearDirectional.html" class="mobile-nav-link">Linear directional mean</a></li><li id="MeasureStandardDistance"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/MeasureStandardDistance.html" class="mobile-nav-link">Standard distance</a></li></ul></li><li id="Clusters1"><strong class="mobile-nav-subtitle">Cluster analysis</strong><ul><li id="Clusters"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/Clusters.html" class="mobile-nav-link">Cluster analysis overview</a></li><li id="HotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HotSpotAnalyst.html" class="mobile-nav-link">Hot spot analysis</a></li><li id="OptimizedHotSpotAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/OptimizedHotSpotAnalyst.html" class="mobile-nav-link">Optimized hot spot analysis</a></li><li id="ClusterOutlierAnalyst"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/ClusterOutlierAnalyst.html" class="mobile-nav-link">Cluster and outlier analysis</a></li></ul></li><li id="SpatialRelationshipModeling1"><strong class="mobile-nav-subtitle">Modeling spatial relationships</strong><ul><li id="SpatialRelationshipModeling"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialRelationshipModeling.html" class="mobile-nav-link">Modeling spatial relationships overview</a></li><li id="GeographicWeightedRegression"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/GeographicWeightedRegression.html" class="mobile-nav-link">Geographically weighted regression analysis</a></li></ul></li><li id="AnalyzingPatterns1"><strong class="mobile-nav-subtitle">Analyzing patterns</strong><ul><li id="AnalyzingPatterns"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AnalyzingPatterns.html" class="mobile-nav-link">Analyzing patterns overview</a></li><li id="SpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/SpatialAutocorrelation.html" class="mobile-nav-link">Spatial autocorrelation</a></li><li id="HighLowClustering"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/HighLowClustering.html" class="mobile-nav-link">High/Low clustering</a></li><li id="IncrementalSpatialAutocorrelation"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/IncrementalSpatialAutocorrelation.html" class="mobile-nav-link">Incremental spatial autocorrelation</a></li><li id="AverageNearestNeighbor"><a href="/SuperMap-iDesktop-Cross/docs/SpatialStatisticalAnalysis/AverageNearestNeighbor.html" class="mobile-nav-link">Average nearest neighbor</a></li></ul></li></ul></li><li id="BigData"><strong class="mobile-nav-title">Big data online analysis</strong><ul><li id="BigDataAnalysisEnvironmentConfiguration"><a href="/SuperMap-iDesktop-Cross/docs/BigData/BigDataAnalysisEnvironmentConfiguration.html" class="mobile-nav-link">Environment configuration</a></li><li id="DataPreparation"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DataPreparation.html" class="mobile-nav-link">Data preparation</a></li><li id="DensityAnalysis"><a href="/SuperMap-iDesktop-Cross/docs/BigData/DensityAnalysis.html" class="mobile-nav-link">Density analysis</a></li></ul></li><li id="FAQAll"><strong class="mobile-nav-title">FAQ</strong><ul><li id="FAQ"><a href="/SuperMap-iDesktop-Cross/docs/FAQ.html" class="mobile-nav-link">FAQ</a></li></ul></li><li id="News"><strong class="mobile-nav-title">New Feature</strong><ul><li id="901News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new.html" class="mobile-nav-link">Cross 901 New Feature</a></li><li id="9DNews"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_900.html" class="mobile-nav-link">Cross 9D New Feature</a></li><li id="811News"><a href="/SuperMap-iDesktop-Cross/docs/news/what's_new_in_811.html" class="mobile-nav-link">Cross 8C(2017) New Feature</a></li></ul></li></ul>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/DataProcess/EditObjects/LineEdit.html">
+      
+        <option value="zh">简体中文</option>
+      
+        <option value="en" selected>English</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/SuperMap-iDesktop-Cross/js/lang_select.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/toc.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/mobile_nav.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.10.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/slider.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/jquery-1.5.2.min.js"></script>
+<script src="/SuperMap-iDesktop-Cross/js/sidebar.js"></script>
+<!-- endbuild -->
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.css" /-->
+<link rel="stylesheet" href="/SuperMap-iDesktop-Cross/css/docsearch.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2.1.2/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+var host=window.location.host;
+if(host=='supermap-idesktop.github.io')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else if(host=='')
+{
+  docsearch({
+    apiKey: '87c625ea3b3f57f243d590e3c59b0748',
+    indexName: 'supermap-idesktop',
+    inputSelector: '#search-input'
+  });
+}
+else(host=='support.supermap.com.cn')
+{
+  docsearch({
+    apiKey: '19f860b1fcffb4b23a7b2f928e8b0692',
+    indexName: 'supermap-cn',
+    inputSelector: '#search-input'
+  });
+}
+</script>
+
+
+</body>
+</html>
